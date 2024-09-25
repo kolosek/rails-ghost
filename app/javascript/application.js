@@ -74,4 +74,29 @@ $(document).on('turbo:load', function() {
         productSubMenuIcon.classList.remove('rotate-180');
       }
   });
+
+  // handle login dropdown
+  // const dropdownButton = document.getElementById('loginButton');
+  // const dropdownMenu = document.getElementById('loginMenu');
+  // let isDropdownMenuVisible = false;
+
+  // dropdownButton.addEventListener('click', function() {
+  //   isDropdownMenuVisible = !isDropdownMenuVisible;
+  //   // Toggle the 'hidden' class on the dropdown menu
+  //   if (isDropdownMenuVisible) {
+  //     dropdownMenu.classList.remove('hidden');
+  //   } else {
+  //     dropdownMenu.classList.add('hidden');
+  //   }
+  // });
+
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+  
+    if (!isClickInside && isDropdownMenuVisible) {
+      // Close the dropdown menu if the click was outside
+      dropdownMenu.classList.add('hidden');
+      isDropdownMenuVisible = false;
+    }
+  });
 });
