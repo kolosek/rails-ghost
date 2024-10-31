@@ -13,7 +13,9 @@
       <time class="capitalize" datetime="2024-02-20"><%= @post['created_at'].to_datetime.strftime("%B %d, %Y") %></time>
 
       <span class="mx-1.5 opacity-80">—</span>
-      <a href="<%=  @post['authors'][0]['url'] %>" class="no-underline font-semibold text-inherit"><%= @post['authors'][0]['name'] %></a>
+      <% @post['authors'].each_with_index do |author, index| %>
+        <a href="<%=  author['url'] %>" class="no-underline font-semibold text-inherit"><%= author['name'] %></a><%= ', ' if index < @post['authors'].size - 1 %>
+      <% end %>
     </p>    
 
     <figure class="max-w-[1200px] mx-auto mt-10 xl:mt-16 has-links ">
