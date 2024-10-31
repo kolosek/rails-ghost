@@ -10,15 +10,39 @@
     <%= csp_meta_tag %>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind customizations
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              'xs': '480px',
+            },
+          },
+        },
+      }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <style>
+      html, body {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+      }
+      #footer-imgs {
+        zoom: 50%;
+        @media only screen and (min-width: 1024px) {
+          zoom: 100%;
+        }
+      }
+    </style>
     <%#= stylesheet_link_tag "application", media: 'all', "data-turbo-track": "reload" %>
     <%#= javascript_importmap_tags %>
     <%= raw @settings['codeinjection_head'] %>
     <%= render 'layouts/partials/scripts_header' %>
+    <%= render 'layouts/partials/pricing_script' if action_name == 'pricing' %>
   </head>
 
   <body class="bg-gray-900 relative">
@@ -27,11 +51,6 @@
     <div class="page-wrapper">
       <%= yield %>
       <%= render 'layouts/partials/footer' %>
-    </div>
-    <div>
-      <%= image_tag 'light-blue-footer.svg', class: 'absolute h-32 left-0 bottom-0', alt: '' %>
-      <%= image_tag 'orange-footer.svg', class: 'absolute right-0 bottom-0', alt: '' %>
-      <%= image_tag 'blue-footer.svg', class: 'absolute right-0 bottom-0', alt: '' %>
     </div>
     <%= raw @settings['codeinjection_foot'] %>
   </body>

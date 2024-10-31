@@ -1,0 +1,22 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.question-btn');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-toggle');
+        const target = document.getElementById(targetId);
+        const isExpanded = target.style.display === 'block';
+
+        if (isExpanded) {
+          target.style.display = 'none';
+          this.querySelector('.arrow-down').classList.remove('rotate-180');
+        } else {
+          target.style.display = 'block';
+          this.querySelector('.arrow-down').classList.add('rotate-180');
+        }
+      });
+    });
+  });
+  console.log('Loading pricing script')
+</script>
