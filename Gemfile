@@ -47,6 +47,8 @@ gem "jquery-rails"
 
 gem 'sassc-rails'
 
+gem 'tailwindcss-rails'
+
 gem 'httparty'
 
 group :development, :test do

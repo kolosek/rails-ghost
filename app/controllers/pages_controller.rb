@@ -2,7 +2,9 @@ class PagesController < ApplicationController
 	before_action :set_settings
 
 	def post
-		@posts = ghost_client.get_posts.reverse
+		@posts = Rails.cache.fetch("posts", expires_in: 1.hour) do
+			ghost_client.get_posts.reverse
+		end
 		@post = request.path == '/docs' ? 
 			@posts.select {|p| p['custom_template'] == 'custom-documentation'}.first : ghost_client.get_post(request.path)
 
@@ -14,7 +16,9 @@ class PagesController < ApplicationController
 	end
 
 	def blogs
-		@posts = ghost_client.get_posts.select {|p| p['custom_template'] != 'custom-documentation'}
+		@posts  = Rails.cache.fetch("blogs", expires_in: 1.hour) do
+			ghost_client.get_posts.select {|p| p['custom_template'] != 'custom-documentation'}
+		end
 		@fatured = @posts.select {|p| p['featured']}.first(3)
 
 		render layout: 'blog'
@@ -27,6 +31,8 @@ class PagesController < ApplicationController
 	end
 
 	def set_settings
-		@settings = ghost_client.settings
+		@settings = Rails.cache.fetch("ghost_settings", expires_in: 1.hour) do
+			ghost_client.settings
+		end
 	end
 end
