@@ -47,10 +47,12 @@ class PagesController < ApplicationController
 	end
 
 	def resolve_app
-		@app = if request.host == 'fast.ci'
-						 'fastci'
-					 else
-						 'rubyci'
-					 end
+		if request.host == 'fast.ci'
+			@app = 'fastci'
+			@host = 'fast.ci'
+		else
+			@app = 'rubyci'
+			@host = 'ruby.ci'
+		end
 	end
 end

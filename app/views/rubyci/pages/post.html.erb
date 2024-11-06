@@ -21,13 +21,13 @@
                                       after:absolute after:top-0 after:left-0 after:w-full after:h-full after:ring-1 after:ring-inset after:ring-gray-900/5 dark:after:ring-gray-50/5 after:rounded-md
                                           aspect-w-16 aspect-h-9
                                                                                           ">
-                                  <img class="!m-0 object-cover lazyautosizes ls-is-cached lazyloaded" src=<%= @post['feature_image'] %> alt="Installation" sizes="618px">
+                                  <img class="!m-0 object-cover lazyautosizes ls-is-cached lazyloaded" src=<%= @post['feature_image'].gsub("#{@host}", "blog.#{@host}") %> alt="Installation" sizes="618px">
                               </div>
                           </figure>
               </header>
 
               <div class="mt-8 content 4xl:content-lg">
-                 <%= raw @post['html'] %>
+                 <%= raw @post['html'].gsub("#{@host}", "blog.#{@host}") %>
               </div>
 
           </article>
