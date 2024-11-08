@@ -18,5 +18,7 @@ Rails.application.routes.draw do
   get '/get_started', to: 'pages#get_started'
   get '/features', to: 'pages#features'
 
+  get '/blog/:slug', to: redirect { |path_params, req| "/#{path_params[:slug]}" }
+
   match '*path', to: 'pages#post', via: :get
 end
