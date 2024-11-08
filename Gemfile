@@ -53,6 +53,8 @@ gem 'tailwindcss-rails'
 
 gem 'httparty'
 
+gem 'sitemap_generator'
+
 gem 'phrasing'
 
 gem 'devise'
