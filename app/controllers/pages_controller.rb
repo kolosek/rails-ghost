@@ -70,8 +70,12 @@ class PagesController < ApplicationController
 	end
 
 	def set_settings
-		@settings = Rails.cache.fetch("ghost_settings_#{@app}", expires_in: 1.hour) do
-			ghost_client.settings
+		begin
+			@settings = Rails.cache.fetch("ghost_settings_#{@app}", expires_in: 1.hour) do
+				ghost_client.settings
+			end
+		rescue
+			@settings = {}
 		end
 	end
 
