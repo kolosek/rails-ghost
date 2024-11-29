@@ -18,6 +18,7 @@
       <% end %>
     </p>    
 
+    <% unless @post['feature_image'].nil?%>
     <figure class="max-w-[1200px] mx-auto mt-10 xl:mt-16 has-links ">
         <div class="relative rounded-md lg:rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 
                     after:absolute after:top-0 after:left-0 after:w-full after:h-full after:ring-1 after:ring-inset after:ring-gray-900/5 dark:after:ring-gray-50/5 after:rounded-md lg:after:rounded-xl 
@@ -26,6 +27,7 @@
             <img class="!m-0 object-cover lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" alt="<%= @post['title'] %>" src="<%= @post['feature_image'].gsub("#{@host}", "blog.#{@host}") %>" sizes="541px">
         </div>
     </figure>
+    <% end %>
     </div>
     <div class="">
       <div class="w-full max-w-3xl mx-auto ">
