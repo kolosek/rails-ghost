@@ -1,4 +1,4 @@
-<main class="">
+<main class="bg-gray-950">
   <section id="pricing-hero-section">
     <div class="relative isolate overflow-hidden">
       <%= image_tag 'vector-left.svg', class: 'absolute -top-24 -left-16 rotate-[62deg] blur-2xl', alt: "" %>
@@ -19,255 +19,216 @@
           <div class="mt-16 pb-8 flex justify-center">
             <p class="text-xl font-normal text-white">Monthly Prices</p>
           </div>
-          <div class="isolate mx-2 md:mx-auto mt-10 grid grid-cols-1 justify-center gap-5 md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
-            <div class="rounded-3xl p-7 ring-1 ring-gray-200 hover:bg-indigo-900">
-              <h3 id="tier-hobby" class="text-lg font-semibold leading-7 text-white">Free</h3>
-              <p class="mt-4 text-sm font-normal text-white">For small companies.</p>
-              <p class="mt-6 flex items-baseline h-16 gap-x-1">
-                <!-- Price, update based on frequency toggle state -->
-                <span class="text-4xl font-light tracking-tight text-white">Free</span>
-                <!-- Payment frequency, update based on frequency toggle state -->
-                <span class="text-sm font-normal leading-5 text-gray-500">/per Month</span>
-              </p>
-              <a href="https://app.ruby.ci/users/auth/github" class="mt-6 block rounded-full px-4 py-2 sm:px-8 sm:py-4 text-center text-base text-white ring-1 ring-inset ring-white from-blue-500 to-[#7953AA] hover:bg-gradient-to-b hover:ring-0 hover:text-white">
-                Sign Up With Github
-              </a>
-              <div class="mt-6 block rounded-full px-4 py-2 sm:px-8 sm:py-4 text-base text-center text-white opacity-0">
-                I want this plan
+          <div class="isolate mx-2 mt-10 grid grid-cols-1 justify-center gap-5 md:max-w-lg lg:max-w-none lg:grid-cols-3">
+            <div class="rounded-3xl p-7 ring-1 ring-gray-700 hover:bg-slate-900">
+              <div class="text-center pt-10">
+                <h3 id="tier-hobby" class="text-3xl font-semibold leading-7 text-white">Free</h3>
+                <p class="mt-4 text-base font-normal text-white">For small companies.</p>
+                <p class="mt-6 flex items-baseline justify-center h-16 gap-x-1">
+                  <!-- Price, update based on frequency toggle state -->
+                  <span class="text-4xl font-light tracking-tight text-white">Free</span>
+                  <!-- Payment frequency, update based on frequency toggle state -->
+                  <span class="text-base font-normal leading-5 text-gray-500">/user per Month</span>
+                </p>
+                <a href="https://app.ruby.ci/users/auth/github" class="mt-6 block rounded-full px-4 py-2 sm:px-8 sm:py-4 text-center text-base text-white ring-1 ring-inset ring-white hover:ring-gray-400">
+                  Sign Up With Github
+                </a>
               </div>
               <ul role="list" class="border-0 border-t border-zinc-900 pt-4 mt-8 space-y-3 tracking-tight text-sm font-normal leading-5 text-white">
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Unlimited number of user
+                  Basic Speed
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  100 builds for free each month
+                  Up to 50 Pushes / Month
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Automatic setup, easy transition
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  No configuration
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Cloud development option
+                  14-Day Data Retention
                 </li>
               </ul>
-            </div>
-            <div class="xl:mt-0 p-7 rounded-3xl ring-1 ring-gray-200 hover:bg-indigo-900">
-              <h3 id="tier-hobby" class="text-lg font-semibold leading-7 text-white">Starter</h3>
-              <p class="mt-4 text-sm font-normal text-white">For companies that grow.</p>
-              <p class="mt-6 flex items-baseline h-16 gap-x-1">
-                <!-- Price, update based on frequency toggle state -->
-                <span class="text-5xl font-medium tracking-tight text-white">$49</span>
-                <!-- Payment frequency, update based on frequency toggle state -->
-                <span class="text-sm font-normal leading-5 text-gray-500">/per Month</span>
-              </p>
-              <a href="https://app.ruby.ci/users/auth/github" class="mt-6 block rounded-full px-4 py-2 sm:px-8 sm:py-4 text-base text-center text-white ring-1 ring-inset ring-white from-blue-500 to-[#7953AA] hover:bg-gradient-to-b hover:ring-0 hover:text-white">
-                Sign Up With Github
-              </a>
-              <!--a href="https://app.ruby.ci/users/auth/github" class="mt-6 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-4 py-2 sm:px-8 sm:py-4 text-base text-center text-white shadow-sm hover:bg-gradient-to-t">
-                I want this plan
-              </a-->
               <ul role="list" class="border-0 border-t border-zinc-900 pt-4 mt-8 space-y-3 tracking-tight text-sm font-normal leading-5 text-white">
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Get price match
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Add unlimited paid seats
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Concurency up to 100x
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Code coverage reports
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Unified dashboard for failed tests
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Code quality option
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Code security report
-                </li>
-                <li class="flex gap-x-1.5">
-                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                  </svg>
-                  Optional development environment
+                  Email Support
                 </li>
               </ul>
             </div>
-            <div class="relative rounded-3xl p-7 ring ring-inset ring-indigo-500 hover:bg-indigo-900">
-              <div class="flex justify-between items-center">
-                <h3 id="tier-hobby" class="text-lg font-semibold leading-7 text-white">Premium</h3>
-                <span class="rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-3 py-2 -mt-7 -mr-4 text-xs font-semibold text-white">Most Popular</span>
+            <div class="relative xl:mt-0 p-7 rounded-3xl ring ring-indigo-500 hover:bg-slate-900">
+              <div class="absolute inset-x-0 top-0 translate-x-px transform">
+                <div class="text-center">
+                  <span class="rounded-b-md from-blue-500 to-[#7953AA] bg-gradient-to-b px-3 py-2 text-xs font-semibold text-white">Most Popular</span>
+                </div>
               </div>
-              
-              <p class="mt-4 text-sm font-normal text-white">For companies that grow.</p>
-              <p class="mt-6 flex items-baseline h-16 gap-x-1">
-                <!-- Price, update based on frequency toggle state -->
-                <span class="text-5xl font-medium tracking-tight text-white">$79</span>
-                <!-- Payment frequency, update based on frequency toggle state -->
-                <span class="text-sm font-normal leading-5 text-gray-500">/per Month</span>
-              </p>
-              <a href="https://app.ruby.ci/users/auth/github" class="mt-6 block rounded-full px-4 py-2 sm:px-8 sm:py-4 text-base text-center text-white ring-1 ring-inset ring-white from-blue-500 to-[#7953AA] hover:bg-gradient-to-b hover:ring-0 hover:text-white">
-                Sign Up With Github
-              </a>
-              <!--a href="https://app.ruby.ci/users/auth/github" class="mt-6 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-4 py-2 sm:px-8 sm:py-4 text-base text-center text-white shadow-sm hover:bg-gradient-to-t shadow-sm">
-                I want this plan
-              </a-->
+              <div class="text-center pt-10">
+                <h3 id="tier-hobby" class="text-3xl font-semibold leading-7 text-white">Basic</h3>
+                <p class="mt-4 text-base font-normal text-white">For companies that grow.</p>
+                <p class="mt-6 flex items-baseline justify-center h-16 gap-x-1">
+                  <!-- Price, update based on frequency toggle state -->
+                  <span class="text-5xl font-medium text-white">$19</span>
+                  <!-- Payment frequency, update based on frequency toggle state -->
+                  <span class="text-base font-normal leading-5 text-gray-500">/user per Month</span>
+                </p>
+                <a href="https://app.ruby.ci/users/auth/github" class="mt-6 block rounded-full px-4 py-2 sm:px-8 sm:py-4 text-center text-base text-white bg-gradient-to-b from-blue-500 to-[#7953AA]  hover:opacity-80 transition-all duration-300 ease-in-out">
+                  Get Started
+                </a>
+              </div>
               <ul role="list" class="border-0 border-t border-zinc-900 pt-4 mt-8 space-y-3 tracking-tight text-sm font-normal leading-5 text-white">
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Get price match
+                  Basic Speed
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Add unlimited paid seats
+                  Unlimited Pushes
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Concurency up to 100x
+                  30-Day Data Retention
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Code coverage reports
+                  1x Parallel Builds / 10 Active Users
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Unified dashboard for failed tests
+                  Unlimited Build Minutes
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Code quality option
+                  Unlimited Test Results
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Code security report
+                  Unlimited Network Transfer
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Optional development environment
+                  Unlimited Storage
+                </li>
+              </ul>
+              <ul role="list" class="border-0 border-t border-zinc-900 pt-4 mt-8 space-y-3 tracking-tight text-sm font-normal leading-5 text-white">
+                <li class="flex gap-x-1.5">
+                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                  </svg>
+                  Live Chat Support
+                </li>
+                <li class="flex gap-x-1.5">
+                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                  </svg>
+                  Free Migration
                 </li>
               </ul>
             </div>
-            <div class="rounded-3xl p-7 ring-1 ring-gray-200 hover:bg-indigo-900">
-              <h3 id="tier-hobby" class="text-lg font-semibold leading-7 text-white">Dedicated</h3>
-              <p class="mt-4 text-sm font-normal text-white">For fast paced companies</p>
-              <p class="mt-6 flex items-baseline h-16 gap-x-1">
-                <!-- Price, update based on frequency toggle state -->
-                <span class="text-5xl font-medium tracking-tight text-white">Your</span>
-                <!-- Payment frequency, update based on frequency toggle state -->
-                <span class="text-sm font-normal leading-5 text-white">company oriented</span>
-              </p>
-              <a href="http://calendly.com/rubyci" class="mt-6 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-4 py-2 sm:px-8 sm:py-4 text-base text-center text-white hover:bg-gradient-to-t">Contact Us</a>
+            <div class="relative rounded-3xl p-7 ring-1 ring-inset ring-gray-700 hover:bg-slate-900">
+              <div class="text-center pt-10">
+                <h3 id="tier-hobby" class="text-3xl font-semibold leading-7 text-white">Pro</h3>
+                <p class="mt-4 text-base font-normal text-white">For fast paced companies</p>
+                <p class="mt-6 flex items-baseline justify-center h-16 gap-x-1">
+                  <!-- Price, update based on frequency toggle state -->
+                  <span class="text-5xl font-medium text-white">$49</span>
+                  <!-- Payment frequency, update based on frequency toggle state -->
+                  <span class="text-base font-normal leading-5 text-gray-500">/user per Month</span>
+                </p>
+                <a href="#" class="mt-6 block rounded-full px-4 py-2 sm:px-8 sm:py-4 text-center text-base text-white bg-gradient-to-b from-blue-500 to-[#7953AA] hover:opacity-80 transition-all duration-300 ease-in-out">
+                  Get Started
+                </a>
+              </div>
               <ul role="list" class="border-0 border-t border-zinc-900 pt-4 mt-8 space-y-3 tracking-tight text-sm font-normal leading-5 text-white">
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Reduce test run under 10 minutes
+                  Pro Speed (5x Faster)
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Get price match
+                  Unlimited Pushes
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Fastest CI on the market
+                  90-Day Data Retention
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Add unlimited user seats
+                  1x Parallel Builds / 5 Active Users
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Concurency up to 256x
+                  Unlimited Build Minutes
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Unified dashboard for failed tests
+                  Unlimited Test Results
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Code quality option
+                  Unlimited Network Transfer
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Code security report
+                  Unlimited Storage
+                </li>
+              </ul>
+              <ul role="list" class="border-0 border-t border-zinc-900 pt-4 mt-8 space-y-3 tracking-tight text-sm font-normal leading-5 text-white">
+                <li class="flex gap-x-1.5">
+                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                  </svg>
+                  Live Chat Support
                 </li>
                 <li class="flex gap-x-1.5">
                   <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                   </svg>
-                  Optional development environment
+                  Free Migration
+                </li>
+                <li class="flex gap-x-1.5">
+                  <svg class="h-6 w-5 flex-none text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                  </svg>
+                  Dedicated Onboarding
                 </li>
               </ul>
             </div>
@@ -308,193 +269,230 @@
             <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full px-6 py-3 text-center text-base font-medium leading-6 text-white ring-1 ring-inset ring-gray-800 hover:ring-0 hover:text-white from-blue-500 to-[#7953AA] hover:bg-gradient-to-b">I want this plan</a>
             <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-white">
               <li>
-                <ul role="list" class="space-y-4">
+                <ul role="list" class="space-y-2">
                   <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span> Unlimited number of users </span>
+                    <span class="text-base">Plan overview:</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> CI Speed: </span>
+                    <span> Basic </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Pushes (Month): </span>
+                    <span> Up to 50 </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Data Retention: </span>
+                    <span> 14 Days </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Parallel Builds: </span>
+                    <span> - </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Features: </span>
+                    <span> All </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Support: </span>
+                    <span> Email </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Migration: </span>
+                    <span> Paid </span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul role="list" class="space-y-2">
+                  <li class="flex gap-x-3">
+                    <span class="text-base">App Features:</span>
                   </li>
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span> Automatic setup, easy transition </span>
+                    <span> Fail Insights </span>
                   </li>
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>100 builds for free each month</span>
+                    <span> See What You’re Missing </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Code Quality Radar</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Bundler Audit</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Dependency Shield</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Rails Security Guard</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>JavaScript Test Master</span>
                   </li>
                 </ul>
               </li>
             </ul>
           </section>
           <section class="rounded-xl p-8 ring-1 ring-inset ring-white/10">
-            <h3 id="tier-growth" class="text-sm font-semibold leading-6 text-white">Starter</h3>
+            <h3 id="tier-growth" class="text-sm font-semibold leading-6 text-white">Basic</h3>
             <p class="mt-2 flex items-baseline gap-x-1">
-              <span class="text-4xl font-bold text-white">$12</span>
+              <span class="text-4xl font-bold text-white">$19</span>
             </p>
             <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t">I want this plan</a>
             <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-white">
               <li>
-                <ul role="list" class="space-y-4">
+                <ul role="list" class="space-y-2">
                   <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Automatic setup, easy transition</span>
+                    <span class="text-base">Plan overview:</span>
                   </li>
                   <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Get price match</span>
+                    <span class="text-indigo-500"> CI Speed: </span>
+                    <span> Basic </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Pushes (Month): </span>
+                    <span> Unlimited </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Data Retention: </span>
+                    <span> 30 Days </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Parallel Builds: </span>
+                    <span> 1x/10 Active Users </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Features: </span>
+                    <span> All </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Support: </span>
+                    <span> Live Chat </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Migration: </span>
+                    <span> Free </span>
                   </li>
                 </ul>
               </li>
               <li>
-                <ul role="list" class="space-y-4">
+                <ul role="list" class="space-y-2">
                   <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Add unlimited paid seats</span>
+                    <span class="text-base">App Features:</span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code coverage reports</span>
+                    <span> Fail Insights </span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code quality option</span>
+                    <span> See What You’re Missing </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Code Quality Radar</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Bundler Audit</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Dependency Shield</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>Rails Security Guard</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
+                    <span>JavaScript Test Master</span>
                   </li>
                 </ul>
               </li>
             </ul>
           </section>
           <section class="p-8">
-            <h3 id="tier-scale" class="text-sm font-semibold leading-6 text-white">Premium</h3>
+            <h3 id="tier-scale" class="text-sm font-semibold leading-6 text-white">Pro</h3>
             <p class="mt-2 flex items-baseline gap-x-1">
-              <span class="text-4xl font-bold text-white">$29</span>
+              <span class="text-4xl font-bold text-white">$49</span>
             </p>
             <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t">I want this plan</a>
             <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-white">
               <li>
-                <ul role="list" class="space-y-4">
+                <ul role="list" class="space-y-2">
                   <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Automatic setup, easy transition</span>
+                    <span class="text-base">Plan overview:</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> CI Speed: </span>
+                    <span> Pro (5x Faster) </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Pushes (Month): </span>
+                    <span> Unlimited </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Data Retention: </span>
+                    <span> 90 Days </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Parallel Builds: </span>
+                    <span> 1x/5 Active Users </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Features: </span>
+                    <span> All </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Support: </span>
+                    <span> Live Chat </span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <span class="text-indigo-500"> Migration: </span>
+                    <span> Free </span>
                   </li>
                 </ul>
               </li>
               <li>
-                <ul role="list" class="space-y-4">
+                <ul role="list" class="space-y-2">
                   <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Add unlimited paid seats</span>
+                    <span class="text-base">App Features:</span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code coverage reports</span>
+                    <span> Fail Insights </span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code quality option</span>
+                    <span> See What You’re Missing </span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code security report</span>
+                    <span>Code Quality Radar</span>
                   </li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-          <section class="p-8">
-            <h3 id="tier-scale" class="text-sm font-semibold leading-6 text-white">Dedicated</h3>
-            <p class="mt-2 flex items-baseline gap-x-1">
-              <span class="text-4xl font-bold text-white">Custom</span>
-            </p>
-            <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t">I want this plan</a>
-            <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-white">
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Automatic setup, easy transition</span>
+                    <span>Bundler Audit</span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Add unlimited paid seats</span>
+                    <span>Dependency Shield</span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code coverage reports</span>
+                    <span>Rails Security Guard</span>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
                   <li class="flex gap-x-3">
                     <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code quality option</span>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
-                  <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code security report</span>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
-                  <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Code security report</span>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
-                  <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Reduce test run under 10 minutes	</span>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
-                  <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Concurency up to 256x</span>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul role="list" class="space-y-4">
-                  <li class="flex gap-x-3">
-                    <%=image_tag "checkmark-green.svg", class: "h-5 w-4 flex-none text-green-500", alt: '' %>
-                    <span>Custom dedicated options</span>
+                    <span>JavaScript Test Master</span>
                   </li>
                 </ul>
               </li>
@@ -510,11 +508,10 @@
                 Pricing plan comparison
               </caption>
               <colgroup>
-                <col class="w-1/5">
-                <col class="w-1/5">
-                <col class="w-1/5">
-                <col class="w-1/5">
-                <col class="w-1/5">
+                <col class="w-1/4">
+                <col class="w-1/4">
+                <col class="w-1/4">
+                <col class="w-1/4">
               </colgroup>
               <thead>
                 <tr>
@@ -523,13 +520,10 @@
                     <div class="text-2xl font-normal leading-8 text-white text-center">Free</div>
                   </th>
                   <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
-                    <div class="text-2xl font-normal leading-8 text-white text-center">Starter</div>
+                    <div class="text-2xl font-normal leading-8 text-white text-center">Basic</div>
                   </th>
                   <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
-                    <div class="text-2xl font-normal leading-8 text-white text-center">Premium</div>
-                  </th>
-                  <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
-                    <div class="text-2xl font-normal leading-8 text-white text-center">Dedicated</div>
+                    <div class="text-2xl font-normal leading-8 text-white text-center">Pro</div>
                   </th>
                 </tr>
               </thead>
@@ -540,245 +534,286 @@
                     <div class="flex items-baseline justify-center gap-x-1 text-white text-center">
                       <span class="text-lg font-normal leading-7">-</span>
                     </div>
-                    <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full px-6 py-3 text-center text-base font-medium leading-6 text-white ring-1 ring-inset ring-gray-800 hover:ring-0 hover:text-white from-blue-500 to-[#7953AA] hover:bg-gradient-to-t">I want this plan</a>
+                    <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full px-6 py-3 text-center text-base font-medium leading-6 text-white ring-1 ring-inset ring-white hover:ring-gray-400">I want this plan</a>
+                  </td>
+                  <td class="px-6 pt-2 xl:px-8">
+                    <div class="flex items-baseline justify-center gap-x-1 text-white">
+                      <span class="text-lg font-normal leading-7">$19</span>
+                    </div>
+                    <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t hover:opacity-80 transition-all duration-300 ease-in-out">I want this plan</a>
                   </td>
                   <td class="px-6 pt-2 xl:px-8">
                     <div class="flex items-baseline justify-center gap-x-1 text-white">
                       <span class="text-lg font-normal leading-7">$49</span>
                     </div>
-                    <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t">I want this plan</a>
-                  </td>
-                  <td class="px-6 pt-2 xl:px-8">
-                    <div class="flex items-baseline justify-center gap-x-1 text-white">
-                      <span class="text-lg font-normal leading-7">$79</span>
-                    </div>
-                    <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t">I want this plan</a>
-                  </td>
-                  <td class="px-6 pt-2 xl:px-8">
-                    <div class="flex items-baseline justify-center gap-y-4 text-white">
-                      <span class="text-lg font-normal leading-7">Custom</span>
-                    </div>
-                    <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t">I want this plan</a>
+                    <a href="https://app.ruby.ci/users/auth/github" class="mt-4 block rounded-full from-blue-500 to-[#7953AA] bg-gradient-to-b px-6 py-3 text-center text-base font-medium leading-6 text-white hover:bg-gradient-to-t hover:opacity-80 transition-all duration-300 ease-in-out">I want this plan</a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="2" class="text-3xl text-white font-normal text-left pb-8">Plan overview</th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Automatic setup, easy transition
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    CI Speed
                   </th>
-                  <td class="px-12 py-12">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Basic
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Basic
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
-                  </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Pro (5x Faster)
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Get price match
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Pushes (Month)
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Up to 50
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Unlimited
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
-                  </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Unlimited
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Add unlimited paid seats
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Data Retention
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    14 Days
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    30 Days
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
-                  </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    90 Days
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Code coverage reports
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Parallel Builds
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    -
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    1x/10 Active Users
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
-                  </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    1x/5 Active Users
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Code quality option
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Features
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    All
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    All
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
-                  </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    All
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Code security report
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Support
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Email
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Live Chat
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
-                  </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Live Chat
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Reduce test run under 10 minutes
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Migration
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Paid
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Free
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
-                  </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
-                    <span class="sr-only">Included</span>
+                  <td class="text-white text-center text-lg font-normal">
+                    Free
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
+                </tr>
+                <!-- Start App Features -->
+                <tr>
+                  <th scope="colgroup" colspan="2" class="text-3xl text-white font-normal text-left pb-8 pt-12">App Features</th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Concurency up to 256x
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Fail Insights
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="">
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td class="px-1">
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
-                  </td>
-                  <td class="px-12 py-8">
+                  <td class="px-1">
                     <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
                     <span class="sr-only">Included</span>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
                 <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
-                  <th scope="row" class="py-4 pl-12 text-xl font-normal leading-6 text-left text-white">
-                    Custom dedicated options
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    See What You’re Missing
                   </th>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
+                    <span class="sr-only">Included</span>
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
                   </td>
-                  <td class="px-12 py-8">
-                    <%=image_tag "excluded.svg", class: "mx-auto h-7 w-7 text-zinc-500", alt: '' %>
-                    <span class="sr-only">Excluded</span>
-                  </td>
-                  <td class="px-12 py-8">
+                  <td>
                     <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
                     <span class="sr-only">Included</span>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="colgroup" colspan="5" class="h-5"></th>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
+                </tr>
+                <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Code Quality Radar
+                  </th>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
+                </tr>
+                <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Bundler Audit
+                  </th>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
+                </tr>
+                <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Dependency Shield
+                  </th>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
+                </tr>
+                <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    Rails Security Guard
+                  </th>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
+                </tr>
+                <tr class="ring-1 ring-inset rounded-2xl ring-gray-800">
+                  <th scope="row" class="py-10 pl-12 text-lg font-normal leading-7 text-left text-white">
+                    JavaScript Test Master
+                  </th>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                  <td>
+                    <%=image_tag "checkmark-green.svg", class: "mx-auto h-6 w-6 text-green-500", alt: '' %>
+                    <span class="sr-only">Included</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="colgroup" colspan="4" class="h-5"></th>
                 </tr>
               </tbody>
             </table>
@@ -825,7 +860,7 @@
           <div class="answer pt-2 pb-5 px-5 text-sm lg:text-base text-white font-light" id="answer-4"
             style="display: none;">We want to listen to our users and make a win-win deals. Schedule a call with us and we'll see what can be done.</div>
         </div>
-        
+
       </div>
     </div>
   </section>
