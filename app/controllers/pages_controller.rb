@@ -90,7 +90,7 @@ class PagesController < ApplicationController
 		elsif request.host == 'fast.ci'
 			@app = 'fastci'
 			@host = 'fast.ci'
-		elsif request.host == 'litetracker.com'
+		elsif request.host == 'demo.litetracker.com'
 			@app = 'litetracker'
 			@host = 'litetracker.com'
 		else
