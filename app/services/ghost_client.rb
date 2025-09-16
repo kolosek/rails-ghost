@@ -48,6 +48,8 @@ class GhostClient
       ENV['GHOST_API_URL_KOLOSEK']
     elsif host == 'fast.ci'
       ENV['GHOST_API_URL_FAST_CI']
+    elsif host == 'litetracker.com'
+      ENV['GHOST_API_URL_LITETRACKER']
     else
       ENV['GHOST_API_URL']
     end
@@ -58,6 +60,8 @@ class GhostClient
       ENV['GHOST_CONTENT_API_KEY_KOLOSEK']
     elsif host == 'fast.ci'
       ENV['GHOST_CONTENT_API_KEY_FAST_CI']
+    elsif host == 'litetracker.com'
+      ENV['GHOST_CONTENT_API_KEY_LITETRACKER']
     else
       ENV['GHOST_CONTENT_API_KEY']
     end

@@ -29,7 +29,7 @@ Rails.application.routes.draw do
     get '/features', to: 'pages#features'
   end
 
-  constraints host: %w[kolosek.com] do
+  constraints host: %w[kolosek.com litetracker.com] do
     get '/about', to: 'pages#about'
     get '/contact', to: 'pages#contact'
     get '/process', to: 'pages#process_page'

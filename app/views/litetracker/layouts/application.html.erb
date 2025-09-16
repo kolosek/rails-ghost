@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="<%= @settings['lang'] %>">
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= @settings['meta_title'].present? ? @settings['meta_title'] : 'LiteTracker - Agile project management' %></title>
+    <meta name="description" content="Lite Tracker is the agile project management tool for companies around the world for real-time collaboration around a shared dashboard and snappy user experience. ">
+    <%= favicon_link_tag 'litetracker/favicon.ico' %>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- script for mobile menu handle -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+      @theme {
+        --color-blue-dark: #1b65be;
+        --color-light-gray: #50565d;
+        --color-orange: #d67b00;
+        --color-purple: #5e43d9;
+        --color-green-dark: #2d6e16;
+        --text-heading: 48px;
+        --text-heading--font-weight: 600;
+        --text-subheading: 17px;
+        --text-13: 13px;
+        --animate-background: background-move ease infinite;
+
+        @keyframes background-move {
+          0%,
+          100% {
+            background-position: 0% 50%;
+          }
+
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+
+        @keyframes fade-in {
+          from { opacity: 0 }
+          to { opacity: 1 }
+        }
+
+        @keyframes scrollUp {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+
+        @keyframes scrollDown {
+          100% {
+            transform: translateY(0);
+          }
+          0% {
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      @utility text-subheading {
+        color: var(--color-light-gray);
+      }
+
+      @utility animate-fade-in {
+        animation: fade-in 3s ease-out forwards;
+      }
+      .scroll-container {
+        position: relative;
+        overflow: visible;
+        height: 390px;
+        display: flex;
+        gap: 24px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+      }
+
+      .scroll-list-down {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        animation: scrollDown 12s linear infinite;
+      }
+
+      .scroll-list-up {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        animation: scrollUp 12s linear infinite;
+      }
+    </style>
+    <style>
+      html {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+
+    <%= raw @settings['codeinjection_head'] %>
+  </head>
+
+  <body class="home-template is-head-left-logo has-cover">
+    <div class="viewport">
+      <div class="site-content">
+        <%= render 'litetracker/layouts/partials/header' %>
+        <%= yield %>
+        <%= render 'litetracker/layouts/partials/footer' %>
+      </div>
+    </div>
+    <%= raw @settings['codeinjection_foot'] %>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- Cal floating-popup embed code begins -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "litetracker", {origin:"https://cal.com"});
+
+      Cal.ns.litetracker("floatingButton", {"calLink":"neshaz/litetracker","config":{"layout":"month_view"},"buttonPosition":"bottom-left"});
+      Cal.ns.litetracker("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+    <!-- Cal floating-popup embed code ends -->
+  </body>
+</html>
