@@ -35,7 +35,7 @@ class PagesController < ApplicationController
 	end
 
 	def blogs
-		@posts  = Rails.cache.fetch("blogs_#{@app}_page_#{params[:page] || 1}", expires_in: 1.hour) do
+		@posts = Rails.cache.fetch("blogs_#{@app}_page_#{params[:page] || 1}", expires_in: 1.hour) do
 			ghost_client.get_posts(params[:page] || 1).select {|p| p['custom_template'] != 'custom-documentation'}
 		end
 		@fatured = @posts.select {|p| p['featured']}.first(3)
@@ -90,6 +90,9 @@ class PagesController < ApplicationController
 		elsif request.host == 'fast.ci'
 			@app = 'fastci'
 			@host = 'fast.ci'
+		elsif request.host == 'demo.litetracker.com'
+			@app = 'litetracker'
+			@host = 'litetracker.com'
 		else
 			@app = 'rubyci'
 			@host = 'ruby.ci'

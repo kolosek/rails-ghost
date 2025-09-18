@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title><%= @post.present? ? @post['meta_title'] : 'Kolosek | Ruby on Rails development company' %></title>
+    <title><%= @post.present? ? @post['meta_title'] : 'LiteTracker | Agile software development tool' %></title>
     <meta name="description" content="<%= @post.present? ? @post['meta_description'] : 'Blog page' %>">
     <meta name="keywords" content="ruby, continuous integration, automated tests">
 
-    <%= favicon_link_tag 'kolosek/favicon.svg' %>
+    <%= favicon_link_tag 'litetracker/favicon.ico' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -29,12 +29,12 @@
         </span>
       </a> 
 
-      <%= render 'kolosek/layouts/partials/header_ghost' %>
+      <%= render 'litetracker/layouts/partials/header_ghost' %>
       <main id="main" tabindex="-1" class="flex-none outline-none"> 
         <%= yield %>
       </main>
 
-      <%= render 'kolosek/layouts/partials/footer_ghost' %>
+      <%= render 'litetracker/layouts/partials/footer_ghost' %>
     </div>
     <%= raw @settings['codeinjection_foot'] %>
     <%= raw @post['codeinjection_foot'] if @post.present? %>
