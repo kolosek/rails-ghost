@@ -26,8 +26,10 @@
         --color-orange: #d67b00;
         --color-purple: #5e43d9;
         --color-green-dark: #2d6e16;
+        --color-black-light: #020a0f;
         --text-heading: 48px;
         --text-heading--font-weight: 600;
+        --text-heading--color: var(--color-black-light);
         --text-subheading: 17px;
         --text-13: 13px;
         --animate-background: background-move ease infinite;
@@ -75,6 +77,10 @@
 
       @utility text-subheading {
         color: var(--color-light-gray);
+      }
+
+      @utility text-heading {
+        color: var(--color-black-light);
       }
 
       @utility animate-fade-in {
