@@ -5,16 +5,17 @@
         <div class="animate-background rounded-full bg-gradient-to-r from-green-300 via-blue-600 to-red-300 bg-[length:_400%_400%] px-px py-1 [animation-duration:_6s]">
           <a href="https://app.litetracker.com/" class="relative rounded-full bg-white px-3 py-1.5 text-sm/6 text-gray-600">
             <span class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 inset-ring inset-ring-green-600/20">NEW</span>
-            <span class="pl-2">Automatic import from Jira, Trello, and many more  (08/2025)</span>
+            <span class="pl-2"><%= safe_phrase('litetracker_hero-badge', 'Automatic import from Jira, Trello, and many more  (08/2025)') %></span>
           </a>
         </div>
       </div>
       <div class="text-center">
-        <h1 class="text-5xl font-medium tracking-tight text-balance text-gray-900 sm:text-7xl"><%= phrase('litetracker_header') %> </h1>
-        <p class="mt-8 mx-auto max-w-2xl text-subheading">Packed with features we all love. Easy 1 minute transfer and complementary onboarding when you book a call.</p>
+        <h1 class="text-5xl font-medium tracking-tight text-balance text-gray-900 sm:text-7xl">
+          <%= safe_phrase('litetracker_hero-header', 'The most complete Pivotal Tracker successor*') %></h1>
+        <p class="mt-8 mx-auto max-w-2xl text-subheading"><%= safe_phrase('litetracker_hero-subheader', 'Packed with features we all love. Easy 1 minute transfer and complementary onboarding when you book a call.') %></p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="https://app.litetracker.com" class="rounded-xl bg-black px-5 py-3 text-base font-semibold text-white shadow-xs hover:bg-black/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black/80">Get started &rightarrow;</a>
-          <a href="#" class="rounded-xl border border-gray-200 px-5 py-3 shadow-xs text-base font-semibold text-gray-900 hover:bg-gray-100">Learn more <span aria-hidden="true">→</span></a>
+          <a href="https://app.litetracker.com" class="rounded-xl bg-black px-5 py-3 text-base font-semibold text-white shadow-xs hover:bg-black/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black/80"><%= safe_phrase('litetracker_btn-get_started', 'Get started') %> &rightarrow;</a>
+          <a href="#" class="rounded-xl border border-gray-200 px-5 py-3 shadow-xs text-base font-semibold text-gray-900 hover:bg-gray-100"><%= safe_phrase('litetracker_btn-learn_more', 'Learn more') %> <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -36,9 +37,9 @@
           <p class="pl-1 font-bold">Seamless collaboration</p>
         </div>
         <h3 class="text-heading">
-          Most Features We Loved in Pivotal Tracker
+          <%= safe_phrase('litetracker_seamless-header', 'Most Features We Loved in Pivotal Tracker') %>
         </h3>
-        <p class="text-subheading">Features</p>
+        <p class="text-subheading"><%= safe_phrase('litetracker_seamless-subheader', 'Features') %></p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-10">
         <!-- card 1 -->
@@ -125,16 +126,16 @@
                 </svg>
                 Manage your Epics
               </p>
-              <p class="text-heading tracking-tight text-black">Effective Planning</p>
+              <p class="text-heading tracking-tight text-black"><%= safe_phrase('litetracker_epics-header', 'Effective Planning') %></p>
               <ol class="space-y-3">
                 <li class="text-subheading flex items-start">
-                  Built-in velocity tracking was a favorite, using Fibonacci-scale story points to calculate team capacity as a rolling average (e.g., over the last four sprints).
+                  <%= safe_phrase('litetracker_epics-content', 'Built-in velocity tracking was a favorite, using Fibonacci-scale story points to calculate team capacity as a rolling average (e.g., over the last four sprints).') %>
                 </li>
               </ol>
             </div>
             <div class="h-11 w-fit">
               <a href="/pricing.html" class="flex items-center justify-center rounded-xl h-full pr-4 pl-5 border border-gray-200 text-black font-semibold hover:bg-gray-100">
-                <span>Learn more</span>
+                <span><%= safe_phrase('litetracker_btn-learn_more', 'Learn more') %></span>
                 <svg class="h-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <polyline points="9 6 15 12 9 18" />
@@ -170,16 +171,16 @@
                 </svg>
                 Easy notification
               </p>
-              <p class="text-heading tracking-tight text-black">Collaboration and Team Alignment</p>
+              <p class="text-heading tracking-tight text-black"><%= safe_phrase('litetracker_notifications-header', 'Collaboration and Team Alignment') %></p>
               <ol class="space-y-3">
                 <li class="text-subheading flex items-start">
-                  Bringing distributed teams together for real-time visibility, priority agreement, and focused collaboration
+                  <%= safe_phrase('litetracker_notifications-content', 'Bringing distributed teams together for real-time visibility, priority agreement, and focused collaboration') %>
                 </li>
               </ol>
             </div>
             <div class="h-11 w-fit">
               <a href="/pricing.html" class="flex items-center justify-center rounded-xl h-full pr-4 pl-5 border border-gray-200 text-black font-semibold hover:bg-gray-100">
-                <span>Learn more</span>
+                <span><%= safe_phrase('litetracker_btn-learn_more', 'Learn more') %></span>
                 <svg class="h-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <polyline points="9 6 15 12 9 18" />
@@ -214,9 +215,11 @@
           <p class="pl-1 font-bold">Features</p>
         </div>
         <h3 class="text-heading">
-          Features designed to empower your workflow
+          <%= safe_phrase('litetracker_features-header', 'Features designed to empower your workflow') %>
         </h3>
-        <p class="text-base font-normal text-gray-500 sm:text-lg/8">Stay ahead with tools that prioritize your needs, integrating insights and efficiency into one powerful platform.</p>
+        <p class="text-base font-normal text-gray-500 sm:text-lg/8">
+          <%= safe_phrase('litetracker_features-subheader', 'Stay ahead with tools that prioritize your needs, integrating insights and efficiency into one powerful platform.') %>
+        </p>
       </div>
     </div>
   </section>
@@ -235,9 +238,9 @@
           <p class="pl-1 font-bold">Features</p>
         </div>
         <h3 class="text-heading">
-          Power-up for agile teams
+          <%= safe_phrase('litetracker_features-powerup-header', 'Power-up for agile teams') %>
         </h3>
-        <p class="text-base font-normal text-gray-500 sm:text-lg/8">Explore the comprehensive suite of tools designed to enhance your productivity and streamline your workflow.</p>
+        <p class="text-base font-normal text-gray-500 sm:text-lg/8"><%= safe_phrase('litetracker_features-powerup-subheader', 'Explore the comprehensive suite of tools designed to enhance your productivity and streamline your workflow.') %></p>
       </div>
       <div class="group flex flex-col gap-16">
         <div class="bg-[#FAFAFA] sm:h-16 py-1 px-2 sm:px-1 w-full flex flex-col sm:flex-row items-start sm:items-center rounded-4xl border border-[#E6E6EB]">
@@ -311,13 +314,13 @@
               <p class="text-lg font-medium tracking-tight text-black">Stay organized and on track</p>
               <ol class="space-y-3">
                 <li class="text-subheading flex items-start">
-                  Organizes work around user stories, with automatic sprint backlog management. Praised for aligning with Agile methodologies and simplifying prioritization.
+                  <%= safe_phrase('litetracker_feature-iteration-content', 'Organizes work around user stories, with automatic sprint backlog management. Praised for aligning with Agile methodologies and simplifying prioritization.') %>
                 </li>
               </ol>
             </div>
             <div class="h-11 w-fit">
               <a href="/pricing.html" class="flex items-center justify-center rounded-xl h-full pr-4 pl-5 border border-gray-200 text-black font-semibold hover:bg-gray-100">
-                <span>Learn more</span>
+                <span><%= safe_phrase('litetracker_btn-learn_more', 'Learn more') %></span>
                 <svg class="h-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <polyline points="9 6 15 12 9 18" />
@@ -351,13 +354,13 @@
               <p class="text-lg font-medium tracking-tight text-black">Manage your epics and labels with ease</p>
               <ol class="space-y-3">
                 <li class="text-subheading flex items-start">
-                  Create new epics and labels on the fly. Manage your stories in epics and achieve high velocity with organized work.
+                  <%= safe_phrase('litetracker_feature-epics-labels-content', 'Create new epics and labels on the fly. Manage your stories in epics and achieve high velocity with organized work.') %>
                 </li>
               </ol>
             </div>
             <div class="h-11 w-fit">
               <a href="/pricing.html" class="flex items-center justify-center rounded-xl h-full pr-4 pl-5 border border-gray-200 text-black font-semibold hover:bg-gray-100">
-                <span>Learn more</span>
+                <span><%= safe_phrase('litetracker_btn-learn_more', 'Learn more') %></span>
                 <svg class="h-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <polyline points="9 6 15 12 9 18" />
@@ -389,13 +392,13 @@
               <p class="text-lg font-medium tracking-tight text-black">Integrates with your favorite tools</p>
               <ol class="space-y-3">
                 <li class="text-subheading flex items-start">
-                  Enhance productivity, streamline processes, and keep everything connected without disrupting your current setup.
+                  <%= safe_phrase('litetracker_feature-integrations-content', 'Enhance productivity, streamline processes, and keep everything connected without disrupting your current setup.') %>
                 </li>
               </ol>
             </div>
             <div class="h-11 w-fit">
               <a href="/pricing.html" class="flex items-center justify-center rounded-xl h-full pr-4 pl-5 border border-gray-200 text-black font-semibold hover:bg-gray-100">
-                <span>Learn more</span>
+                <span><%= safe_phrase('litetracker_btn-learn_more', 'Learn more') %></span>
                 <svg class="h-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <polyline points="9 6 15 12 9 18" />
@@ -437,13 +440,13 @@
               <p class="text-lg font-medium tracking-tight text-black">The easy way to write and edit stories</p>
               <ol class="space-y-3">
                 <li class="text-subheading flex items-start">
-                  Featuring a clean, user-friendly interface, it helps you stay organized, prioritize effectively, and collaborate seamlessly with your team.
+                  <%= safe_phrase('litetracker_feature-snappyui-content', 'Featuring a clean, user-friendly interface, it helps you stay organized, prioritize effectively, and collaborate seamlessly with your team.') %>
                 </li>
               </ol>
             </div>
             <div class="h-11 w-fit">
               <a href="/pricing.html" class="flex items-center justify-center rounded-xl h-full pr-4 pl-5 border border-gray-200 text-black font-semibold hover:bg-gray-100">
-                <span>Learn more</span>
+                <span><%= safe_phrase('litetracker_btn-learn_more', 'Learn more') %></span>
                 <svg class="h-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <polyline points="9 6 15 12 9 18" />
@@ -481,10 +484,10 @@
                 </svg>
                 Integrations
               </p>
-              <p class="text-heading tracking-tight text-black">Integrates with your favorite tools</p>
+              <p class="text-heading tracking-tight text-black"><%= safe_phrase('litetracker_integrations-header', 'Integrates with your favorite tools') %></p>
               <ol class="space-y-3">
                 <li class="text-subheading flex items-start">
-                  Enhance productivity, streamline processes, and keep everything connected without disrupting.
+                  <%= safe_phrase('litetracker_integrations-content', 'Enhance productivity, streamline processes, and keep everything connected without disrupting.') %>
                 </li>
               </ol>
             </div>
@@ -504,97 +507,122 @@
                 <div class="scroll-container w-min">
                   <div class="absolute rounded-[100%] z-30" style="inset: -368px -234px -253px -235px; background: radial-gradient(31.530489856134707% 29.717999881249966% at 49.999988723818106% 51.193062409305725%, #fff0 45.500001311302185%, #fff);"></div>
                   <ul class="scroll-list-up w-21 h-100">
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-github.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gitlab.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-slack.png", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webhook-zapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-hubspot.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-calendly.avif", class:"inline-block h-10", alt:"" %></li>
+
                     <!-- duplicate for seamless loop -->
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 6</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-github.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gitlab.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-slack.png", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webhook-zapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-hubspot.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-calendly.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-github.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gitlab.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-slack.png", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webhook-zapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-hubspot.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-calendly.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-github.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gitlab.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-slack.png", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webhook-zapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-hubspot.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-calendly.avif", class:"inline-block h-10", alt:"" %></li>
+
                   </ul>
                   <ul class="scroll-list-down w-21 h-110">
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-whatsup.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailchimp.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-stripe.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-airtable.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gdrive.avif", class:"inline-block h-10", alt:"" %></li>
                     <!-- duplicate for seamless loop -->
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-whatsup.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailchimp.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-stripe.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-airtable.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gdrive.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-whatsup.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailchimp.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-stripe.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-airtable.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gdrive.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-whatsup.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailchimp.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-stripe.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-airtable.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gdrive.avif", class:"inline-block h-10", alt:"" %></li>
                   </ul>
                   <ul class="scroll-list-up w-21 h-125">
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-klaviyo.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-filterzapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-codezapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gforms.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-jotform.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webflow.avif", class:"inline-block h-10", alt:"" %></li>
+
                     <!-- duplicate for seamless loop -->
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-klaviyo.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-filterzapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-codezapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gforms.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-jotform.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webflow.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-klaviyo.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-filterzapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-codezapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gforms.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-jotform.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webflow.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-klaviyo.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-filterzapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-codezapier.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gforms.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-jotform.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-webflow.avif", class:"inline-block h-10", alt:"" %></li>
+
                   </ul>
                   <ul class="scroll-list-down w-21 h-112">
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gcontacts.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailerlite.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-strava.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-fathom.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-twilio.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-tally.avif", class:"inline-block h-10", alt:"" %></li>
+
                     <!-- duplicate for seamless loop -->
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
-                    <li>Logo 1</li>
-                    <li>Logo 2</li>
-                    <li>Logo 3</li>
-                    <li>Logo 4</li>
-                    <li>Logo 5</li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gcontacts.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailerlite.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-strava.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-fathom.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-twilio.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-tally.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gcontacts.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailerlite.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-strava.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-fathom.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-twilio.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-tally.avif", class:"inline-block h-10", alt:"" %></li>
+
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-gcontacts.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-mailerlite.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-strava.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-fathom.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-twilio.avif", class:"inline-block h-10", alt:"" %></li>
+                    <li class="flex items-center justify-center shadow-xl rounded-xl w-20 aspect-square"><%= image_tag "litetracker/integrations-tally.avif", class:"inline-block h-10", alt:"" %></li>
+
                   </ul>
                 </div>
               </div>
@@ -619,10 +647,10 @@
               </svg>
               Download apps
             </p>
-            <p class="text-heading tracking-tight text-black">Designed to work seamlessly anywhere</p>
+            <p class="text-heading tracking-tight text-black"><%= safe_phrase('litetracker_downloadapps-header', 'Designed to work seamlessly anywhere') %></p>
             <ol class="space-y-3">
               <li class="text-subheading flex items-start">
-                Our app keeps you in touch and in control, giving you access to our services anytime, anywhere.
+                <%= safe_phrase('litetracker_downloadapps-content', 'Our app keeps you in touch and in control, giving you access to our services anytime, anywhere.') %>
               </li>
             </ol>
           </div>
@@ -656,9 +684,9 @@
           </svg>
           <p class="pl-1 font-bold">Testimonials</p>
         </div>
-        <h3 class="text-heading">Trusted by established companies</h3>
+        <h3 class="text-heading"><%= safe_phrase('litetracker_testimonials-header', 'Trusted by established companies') %></h3>
         <p class="text-base font-normal text-gray-500 sm:text-lg">
-          Find out why our solution is the top choice for PivotalTracker users
+          <%= safe_phrase('litetracker_testimonials-subheader', 'Find out why our solution is the top choice for PivotalTracker users') %>
         </p>
       </div>
       <div id="reviews" class="w-full">

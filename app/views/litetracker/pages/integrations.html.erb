@@ -1,5 +1,5 @@
 <main>
-  <section id="about-hero-section" class="bg-[#F6F6F8] relative px-6 pt-14 sm:pt-24 lg:px-8 flex flex-col justify-start gap-y-24 shadow-[inset_0_-2px_4px_-3px_#0003]">
+  <section id="integrations-hero-section" class="bg-[#F6F6F8] relative px-6 pt-14 sm:pt-24 lg:px-8 flex flex-col justify-start gap-y-24 shadow-[inset_0_-2px_4px_-3px_#0003]">
     <div class="mx-auto max-w-4xl pt-16 sm:pt-24">
       <div class="mx-auto max-w-2xl flex flex-col gap-y-6 justify-center w-full text-center">
         <div class="flex items-center justify-center text-green-dark text-xs">
@@ -13,12 +13,10 @@
           <p class="pl-1 font-bold">Integrations</p>
         </div>
         <h3 class="text-heading sm:text-6xl tracking-wide">
-          <%#= phrase('litetracker_integrations-hero-header') %>
-          Integrates with your favorite tools
+          <%= safe_phrase('litetracker_integrations-hero-header', 'Integrates with your favorite tools') %>
         </h3>
         <p class="text-base font-normal text-gray-500 sm:text-lg/8">
-          <%#= phrase('litetracker_integrations-hero-subheader') %>
-          Enhance productivity, streamline processes, and keep everything connected without disrupting your current setup.
+          <%= safe_phrase('litetracker_integrations-hero-subheader', 'Enhance productivity, streamline processes, and keep everything connected without disrupting your current setup.') %>
         </p>
       </div>
     </div>
