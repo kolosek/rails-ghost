@@ -71,7 +71,7 @@ class PagesController < ApplicationController
 		render "#{@app}/pages/integrations", layout: "#{@app}/layouts/application"
 	end
 
-	def integrations
+	def onboard
 		render "#{@app}/pages/onboard", layout: "#{@app}/layouts/application"
 	end
 
