@@ -7,11 +7,8 @@ gem "rails", "~> 7.1.3"
 
 db_adapter = ENV.fetch("DB_ADAPTER", "postgresql")
 
-if db_adapter == "sqlite3"
-  gem "sqlite3"
-else
-  gem "pg"
-end
+gem "pg", platforms: :mri
+gem "sqlite3", platforms: :ruby
 
 gem 'dotenv'
 
