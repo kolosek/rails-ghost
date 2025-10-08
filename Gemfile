@@ -5,9 +5,19 @@ ruby "3.2.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 
-#db_adapter = ENV.fetch("DB_ADAPTER", "postgresql")
+db_adapter = ENV.fetch("DB_ADAPTER", "postgresql")
 
-gem 'pg'
+group :development, :test do
+  gem 'pg'
+end
+
+group :production do
+  if db_adapter == "sqlite3"
+    gem 'sqlite3'
+  else
+    gem 'pg'
+  end
+end
 
 gem 'dotenv'
 
