@@ -104,7 +104,7 @@ class PagesController < ApplicationController
 			@app = 'litetracker'
 			@host = 'litetracker.com'
 		elsif request.host == 'demo.litetracker.com'
-			@app = 'demo.litetracker'
+			@app = 'litetracker'
 			@host = 'demo.litetracker.com'
 		else
 			@app = 'rubyci'
