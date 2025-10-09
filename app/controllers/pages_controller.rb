@@ -40,6 +40,9 @@ class PagesController < ApplicationController
 		@posts = Rails.cache.fetch("blogs_#{@app}_page_#{params[:page] || 1}", expires_in: 1.hour) do
 			ghost_client.get_posts(params[:page] || 1).select {|p| p['custom_template'] != 'custom-documentation'}
 		end
+
+		@posts = ghost_client.get_posts(params[:page] || 1).select {|p| p['custom_template'] != 'custom-documentation'} unless @posts.present?
+
 		@fatured = @posts.select {|p| p['featured']}.first(3)
 
 		render "#{@app}/pages/blogs", layout: "#{@app}/layouts/blog"
