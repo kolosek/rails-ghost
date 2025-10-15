@@ -14,6 +14,7 @@ class GhostClient
       JSON.parse(resp.body)['posts'].first
     rescue => e
       Rails.logger.error e.message
+      nil
     end
   end
 
