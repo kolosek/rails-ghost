@@ -22,32 +22,32 @@ Rails.application.routes.draw do
   patch '/phrasing/:id', to: 'phrasing#update'
   delete '/phrasing/:id/destroy', to: 'phrasing#destroy'
 
-  constraints host: %w[ruby.ci fast.ci] do
-    get '/about_us', to: 'pages#about_us'
-    get '/pricing', to: 'pages#pricing'
-    get '/circle_ci', to: 'pages#circle_ci'
-    get '/github_ci', to: 'pages#github_ci'
-    get '/jenkins_ci', to: 'pages#jenkins_ci'
-    get '/get_started', to: 'pages#get_started'
-    get '/features', to: 'pages#features'
-  end
+  # constraints host: %w[ruby.ci fast.ci] do
+  #   get '/about_us', to: 'pages#about_us'
+  #   get '/pricing', to: 'pages#pricing'
+  #   get '/circle_ci', to: 'pages#circle_ci'
+  #   get '/github_ci', to: 'pages#github_ci'
+  #   get '/jenkins_ci', to: 'pages#jenkins_ci'
+  #   get '/get_started', to: 'pages#get_started'
+  #   get '/features', to: 'pages#features'
+  # end
 
-  constraints host: %w[kolosek.com] do
-    get '/about', to: 'pages#about'
-    get '/contact', to: 'pages#contact'
-    get '/process', to: 'pages#process_page'
-    get '/code_review', to: 'pages#code_review'
-    get '/portfolio', to: 'pages#portfolio'
-    get '/featured', to: 'pages#featured'
-  end
+  # constraints host: %w[kolosek.com] do
+  #   get '/about', to: 'pages#about'
+  #   get '/contact', to: 'pages#contact'
+  #   get '/process', to: 'pages#process_page'
+  #   get '/code_review', to: 'pages#code_review'
+  #   get '/portfolio', to: 'pages#portfolio'
+  #   get '/featured', to: 'pages#featured'
+  # end
 
-  constraints host: %w[demo.litetracker.com litetracker.com] do
-    get '/pricing', to: 'pages#pricing'
-    get '/about', to: 'pages#about'
-    get '/integrations', to: 'pages#integrations'
-    get '/onboard', to: 'pages#onboard'
-    get '/nesha', to: 'pages#nesha'
-  end
+  # constraints host: %w[demo.litetracker.com litetracker.com] do
+  #   get '/pricing', to: 'pages#pricing'
+  #   get '/about', to: 'pages#about'
+  #   get '/integrations', to: 'pages#integrations'
+  #   get '/onboard', to: 'pages#onboard'
+  #   get '/nesha', to: 'pages#nesha'
+  # end
 
   get '/blog', to: 'blogs#index'
   get '/blog/:slug', to: 'blogs#show'
