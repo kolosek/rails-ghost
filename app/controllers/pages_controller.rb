@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-	before_action :resolve_app
 	before_action :set_settings
 
 	def index
@@ -12,7 +11,7 @@ class PagesController < ApplicationController
 		else
 			@page = ghost_client.get_page(request.path)
 
-			render layout: "#{@app}/layouts/blog"
+      render layout: "#{@app}/layouts/blog"
 		end
 	end
 

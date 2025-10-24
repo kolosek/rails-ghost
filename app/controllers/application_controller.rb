@@ -1,18 +1,10 @@
 class ApplicationController < ActionController::Base
+  before_action :resolve_app
   before_action :load_scripts
 
   def resolve_app
-    @app = if request.host == 'kolosek.com'
-             'kolosek'
-           elsif request.host == 'fast.ci'
-             'fastci'
-           elsif request.host == 'litetracker.com'
-             'litetracker'
-           elsif request.host == 'demo.litetracker.com'
-             'litetracker'
-           else
-             'rubyci'
-           end
+    #@app ||= request.host.gsub(".", "")
+    @app = 'litetrackercom'
   end
 
   def ghost_client

@@ -134,9 +134,9 @@
         <div style="background-color: white;">
           <%= render 'phrasing/initializer' %>
         </div>
-        <%= render 'litetracker/layouts/partials/header' %>
+        <%= render 'litetrackercom/layouts/partials/header' %>
         <%= yield %>
-        <%= content_for?(:footer) ? yield(:footer) : render('litetracker/layouts/partials/footer') %>
+        <%= content_for?(:footer) ? yield(:footer) : render('litetrackercom/layouts/partials/footer') %>
       </div>
     </div>
     <%= raw @settings['codeinjection_foot'] %>
