@@ -10,10 +10,6 @@ class BlogsController < ApplicationController
 	def show
 		@post = ghost_client.get_post(request.path)
 
-		if @post.present?
-			render layout: "#{@app}/layouts/blog"
-		else
-			redirect_to blog_path
-		end
+		render layout: "#{@app}/layouts/blog"
 	end
 end
