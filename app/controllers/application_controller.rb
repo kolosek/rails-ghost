@@ -3,7 +3,8 @@ class ApplicationController < ActionController::Base
   before_action :load_scripts
 
   def resolve_app
-    @app ||= request.host.gsub(".", "")
+    #@app ||= request.host.gsub(".", "")
+    @app = 'litetrackercom'
   end
 
   def ghost_client
