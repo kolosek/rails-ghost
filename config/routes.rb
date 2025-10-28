@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     get  'admin/scripts',       to: 'scripts#index',  as: :scripts
     patch 'admin/scripts/update', to: 'scripts#update', as: :update_script
   end
+  
+  resources :files, only: [:show], param: :file_name
 
   # Defines the root path route ("/")
   root "pages#index"

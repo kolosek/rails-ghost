@@ -1,5 +1,5 @@
-SitemapGenerator::Sitemap.default_host = "https://ruby.ci"
-SitemapGenerator::Sitemap.public_path = 'public/sitemaps/rubyci/' 
+SitemapGenerator::Sitemap.default_host = "https://example.com"
+SitemapGenerator::Sitemap.public_path = 'public/sitemaps/examplecom/' 
 SitemapGenerator::Sitemap.create do
   add '/', changefreq: 'monthly', priority: 0.9
   add '/pricing', changefreq: 'monthly', priority: 0.8

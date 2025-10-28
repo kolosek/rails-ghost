@@ -1,22 +1,15 @@
 class RobotsController < ApplicationController
   def show
-    content = case request.host
-              when 'litetracker.com'
+    sitemap_folder = app_name.gsub(".", "")
+    path = Rails.root.join('public', 'sitemaps', sitemap_folder)
+
+    content = if Dir.exist?(path)
                 <<~ROBOTS
                   User-agent: *
                   Disallow:
 
-                  Sitemap: https://#{request.host}/sitemap_litetracker.xml.gz
+                  Sitemap: https://#{request.host}/sitemap.xml.gz
                 ROBOTS
-
-              when 'ruby.ci'
-                <<~ROBOTS
-                  User-agent: *
-                  Disallow:
-
-                  Sitemap: https://#{request.host}/sitemap_ruby_ci.xml.gz
-                ROBOTS
-
               else
                 "User-agent: *\nDisallow: /"
               end

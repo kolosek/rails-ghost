@@ -1,0 +1,106 @@
+/* Custom styles for effects that Tailwind doesn't handle easily */
+
+/* Header visibility control - Remove this class from <header> to hide it */
+.header-visible {
+    display: block;
+}
+
+/* To hide header: change class="header-visible" to class="header-hidden" in HTML */
+.header-hidden {
+    display: none;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-closed {
+    display: none;
+}
+
+.mobile-menu-open {
+    display: block;
+}
+
+/* Static stars in top left corner */
+.static-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 650px;
+    height: 400px;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.static-stars::before,
+.static-stars::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.static-stars::before {
+    top: 40px;
+    left: 50px;
+    box-shadow:
+        80px 30px 0 rgba(255, 255, 255, 0.25),
+        150px 20px 0 rgba(255, 255, 255, 0.3),
+        220px 50px 0 rgba(255, 255, 255, 0.2),
+        320px 35px 0 rgba(255, 255, 255, 0.28),
+        420px 60px 0 rgba(255, 255, 255, 0.22),
+        520px 25px 0 rgba(255, 255, 255, 0.3),
+        180px 80px 0 rgba(255, 255, 255, 0.75),
+        280px 90px 0 rgba(255, 255, 255, 0.7),
+        380px 70px 0 rgba(255, 255, 255, 0.77),
+        480px 85px 0 rgba(255, 255, 255, 0.73),
+        120px 110px 0 rgba(255, 255, 255, 0.76),
+        240px 120px 0 rgba(255, 255, 255, 0.74),
+        360px 100px 0 rgba(255, 255, 255, 0.78),
+        460px 115px 0 rgba(255, 255, 255, 0.21),
+        560px 95px 0 rgba(255, 255, 255, 0.29);
+}
+
+.static-stars::after {
+    top: 60px;
+    left: 100px;
+    width: 1.5px;
+    height: 1.5px;
+    box-shadow:
+        90px 25px 0 rgba(255, 255, 255, 0.2),
+        190px 40px 0 rgba(255, 255, 255, 0.18),
+        290px 55px 0 rgba(255, 255, 255, 0.72),
+        390px 30px 0 rgba(255, 255, 255, 0.19),
+        490px 45px 0 rgba(255, 255, 255, 0.71),
+        140px 75px 0 rgba(255, 255, 255, 0.17),
+        250px 95px 0 rgba(255, 255, 255, 0.73),
+        340px 65px 0 rgba(255, 255, 255, 0.2),
+        440px 80px 0 rgba(255, 255, 255, 0.18),
+        540px 70px 0 rgba(255, 255, 255, 0.22);
+}
+
+/* Glassmorphism effect for dashboard image */
+.dashboard-glass-container {
+    position: relative;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-glass-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: white;
+    box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.dashboard-glass-inner img {
+    display: block;
+}

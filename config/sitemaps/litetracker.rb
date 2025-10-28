@@ -1,5 +1,6 @@
 SitemapGenerator::Sitemap.default_host = "https://litetracker.com"
-SitemapGenerator::Sitemap.create(filename: :sitemap_litetracker) do
+SitemapGenerator::Sitemap.public_path = 'public/sitemaps/litetrackercom/' 
+SitemapGenerator::Sitemap.create do
   # --- Static pages ---
   add '/', changefreq: 'monthly', priority: 0.9
   add '/pricing', changefreq: 'monthly', priority: 0.8
