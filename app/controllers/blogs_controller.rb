@@ -4,12 +4,16 @@ class BlogsController < ApplicationController
 
 	def index
 		@posts = ghost_client.get_data(:posts, page: params[:page] || 1)
+
+		if blog_override_exists?(:index)
+			render "#{app_name}/blogs/index"
+		end
 	end
 
 	def show
 		@post = ghost_client.get_data(:post, path: request.path)
 
-		if blog_post_override_exists?
+		if blog_override_exists?(:show)
 			render "#{app_name}/blogs/show"
 		end
 	end
@@ -20,8 +24,8 @@ class BlogsController < ApplicationController
 		layout_exists?(:blog) ? "#{app_name}/layouts/blog" : "#{app_name}/layouts/application"
 	end
 	
-	def blog_post_override_exists?
-	  lookup_context.template_exists?("#{app_name}/blogs/show", [], false)
+	def blog_override_exists?(file_name)
+	  lookup_context.template_exists?("#{app_name}/blogs/#{file_name}", [], false)
 	end
 
 end

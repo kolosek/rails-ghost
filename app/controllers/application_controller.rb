@@ -27,8 +27,8 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  def page_exists?(file_name)
-	  lookup_context.template_exists?("#{app_name}/pages/#{file_name}", [], false)
+  def page_exists?(file_path)
+	  lookup_context.template_exists?("#{app_name}/pages#{file_path}", [], false)
 	end
 
   def layout_exists?(file_name)
