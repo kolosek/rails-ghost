@@ -58,8 +58,8 @@
         <!-- card 1 -->
         <div class="w-full">
           <div class="flex flex-col gap-y-8">
-            <div class="rounded-4xl shadow-xl bg-white h-100">
-              <%= image_tag 'litetracker/feature-story-details.avif', class: "rounded-4xl w-full h-full object-center object-contain fade-edges", alt: '' %>
+            <div class="rounded-xl shadow-xl bg-white h-100">
+              <%= image_tag 'litetracker/feature-story-details.webp', class: "rounded-xl w-full h-full object-center object-contain", alt: '' %>
             </div>
             <div class="flex flex-col gap-4 w-full text-sm">
               <div class="flex flex-col gap-2">
@@ -79,8 +79,8 @@
         <!-- card 2 -->
         <div class="w-full">
           <div class="flex flex-col gap-y-8">
-            <div class="rounded-4xl shadow-xl bg-white h-100">
-              <%= image_tag 'litetracker/feature-manage-stories.avif', class: "rounded-4xl w-full h-full object-center object-contain fade-edges", alt: '' %>
+            <div class="rounded-xl shadow-xl bg-white h-100">
+              <%= image_tag 'litetracker/feature-manage-stories.webp', class: "rounded-xl w-full h-full object-center object-contain", alt: '' %>
             </div>
             <div class="flex flex-col gap-4 w-full text-sm">
               <div class="flex flex-col gap-2">
@@ -100,8 +100,8 @@
         <!-- card 3 -->
         <div class="w-full">
           <div class="flex flex-col gap-y-8">
-            <div class="rounded-4xl shadow-xl bg-white h-100">
-              <%= image_tag 'litetracker/feature-instant-feedback.avif', class: "rounded-4xl w-full h-full object-center object-contain fade-edges", alt: '' %>
+            <div class="rounded-xl shadow-xl bg-white h-100">
+              <%= image_tag 'litetracker/feature-instant-feedback.webp', class: "rounded-xl w-full h-full object-center object-contain", alt: '' %>
             </div>
             <div class="flex flex-col gap-4 w-full text-sm">
               <div class="flex flex-col gap-2">
@@ -157,9 +157,9 @@
             </div>
           </div>
           <div class="sm:px-6 lg:px-0">
-            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
+            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
               <div class="relative mx-auto w-full sm:mx-0">
-                <%= image_tag 'litetracker/features-epics.avif', class: "w-full rounded-4xl", alt: '' %>
+                <%= image_tag 'litetracker/features-epics.webp', class: "w-full rounded-xl", alt: '' %>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@
   </section>
 
   <section id="features-power-up" class="relative px-6 lg:px-8">
-    <div class="relative mx-auto max-w-4xl py-16 sm:py-24 flex items-center flex-col justify-start gap-y-24 w-full">
+    <div class="relative mx-auto py-16 sm:py-24 flex items-center flex-col justify-start gap-y-24 w-full">
       <div class="mx-auto max-w-2xl flex flex-col gap-y-6 justify-center w-full text-center">
         <div class="flex items-center justify-center text-green-dark text-xs">
           <svg class="h-4 w-4"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -228,7 +228,7 @@
         <p class="text-base font-normal text-gray-500 sm:text-lg/8"><%= safe_phrase('litetracker_features-powerup-subheader', 'Explore the comprehensive suite of tools designed to enhance your productivity and streamline your workflow.') %></p>
       </div>
       <div class="group flex flex-col gap-16">
-        <div class="bg-[#FAFAFA] sm:h-16 py-1 px-2 sm:px-1 w-full flex flex-col sm:flex-row items-start sm:items-center rounded-4xl border border-[#E6E6EB]">
+        <div class="bg-[#FAFAFA] sm:h-16 py-1 px-2 sm:px-1 mx-auto max-w-4xl w-full flex flex-col sm:flex-row items-start sm:items-center rounded-4xl border border-[#E6E6EB]">
           <input type="radio" id="iteration-planning" name="selected_feature" class="peer/iteration-planning iteration-planning sr-only" checked>
           <label for="iteration-planning" class="w-full sm:w-0 flex items-center justify-start sm:justify-center flex-grow gap-2 h-12 p-4 cursor-pointer font-medium text-sm text-[#50565d] rounded-4xl peer-checked/iteration-planning:border peer-checked/iteration-planning:text-[#020a0f] peer-checked/iteration-planning:bg-white peer-checked/iteration-planning:border-[#E6E6EB]">
             <svg class="h-4 w-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -282,7 +282,7 @@
           </label>
         </div>
         <!-- iteration planning -->
-        <div class="grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center hidden group-has-[.iteration-planning:checked]:grid">
+        <div class="max-w-5xl mx-auto grid-cols-1 gap-x-16 gap-y-16 sm:gap-y-20 lg:grid-cols-[376px_auto] lg:items-center hidden group-has-[.iteration-planning:checked]:grid">
           <div class="flex flex-col gap-10 px-6 lg:px-0">
             <div class="flex flex-col gap-4">
               <p class="flex items-center gap-1 text-orange font-semibold text-sm">
@@ -314,16 +314,16 @@
             </div>
           </div>
           <div class="sm:px-6 lg:px-0">
-            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
-              <div class="relative mx-auto w-full sm:mx-0 shadow-xl rounded-4xl">
-                <%= image_tag 'litetracker/iteration-planning.avif', class: "w-full rounded-4xl", alt: '' %>
+            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
+              <div class="relative mx-auto w-full sm:mx-0 shadow-xl rounded-xl">
+                <%= image_tag 'litetracker/iteration-planning.webp', class: "w-full rounded-xl", alt: '' %>
               </div>
             </div>
           </div>
         </div>  <!-- end iteration planning -->
 
         <!-- easy organization -->
-        <div class="grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center hidden group-has-[.easy-organization:checked]:grid">
+        <div class="max-w-5xl mx-auto grid-cols-1 gap-x-16 gap-y-16 sm:gap-y-20 lg:grid-cols-[376px_auto] lg:items-center hidden group-has-[.easy-organization:checked]:grid">
           <div class="flex flex-col gap-10 px-6 lg:px-0">
             <div class="flex flex-col gap-4">
               <p class="flex items-center gap-1 text-purple font-semibold text-sm">
@@ -354,16 +354,16 @@
             </div>
           </div>
           <div class="sm:px-6 lg:px-0">
-            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
-              <div class="relative mx-auto w-full sm:mx-0 shadow-xl rounded-4xl">
-                <%= image_tag 'litetracker/features-epics.avif', class: "w-full rounded-4xl", alt: '' %>
+            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
+              <div class="relative mx-auto w-full sm:mx-0 shadow-xl rounded-xl">
+                <%= image_tag 'litetracker/features-epics.webp', class: "w-full rounded-xl", alt: '' %>
               </div>
             </div>
           </div>
         </div>  <!-- end easy organization -->
 
         <!-- Seamless integration -->
-        <div class="grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center hidden group-has-[.seamless-integration:checked]:grid">
+        <div class="max-w-5xl mx-auto grid-cols-1 gap-x-16 gap-y-16 sm:gap-y-20 lg:grid-cols-[376px_auto] lg:items-center hidden group-has-[.seamless-integration:checked]:grid">
           <div class="flex flex-col gap-10 px-6 lg:px-0">
             <div class="flex flex-col gap-4">
               <p class="flex items-center gap-1 text-green-dark font-semibold text-sm">
@@ -392,16 +392,16 @@
             </div>
           </div>
           <div class="sm:px-6 lg:px-0">
-            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
-              <div class="relative mx-auto w-full sm:mx-0 shadow-xl">
-                <%= image_tag 'litetracker/seamless-integrations.png', class: "w-full rounded-m", alt: '' %>
+            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
+              <div class="relative mx-auto w-full sm:mx-0 shadow-xl rounded-xl">
+                <%= image_tag 'litetracker/seamless-integrations.webp', class: "w-full rounded-xl", alt: '' %>
               </div>
             </div>
           </div>
         </div>  <!-- end Seamless integration -->
 
         <!-- Snappy UI -->
-        <div class="grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center hidden group-has-[.snappy-ui:checked]:grid">
+        <div class="max-w-5xl mx-auto grid-cols-1 gap-x-16 gap-y-16 sm:gap-y-20 lg:grid-cols-[376px_auto] lg:items-center hidden group-has-[.snappy-ui:checked]:grid">
           <div class="flex flex-col gap-10 px-6 lg:px-0">
             <div class="flex flex-col gap-4">
               <p class="flex items-center gap-1 text-blue-dark font-semibold text-sm">
@@ -440,9 +440,9 @@
             </div>
           </div>
           <div class="sm:px-6 lg:px-0">
-            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
-              <div class="relative mx-auto w-full sm:mx-0 shadow-xl rounded-4xl">
-                <%= image_tag 'litetracker/snappi-ui.avif', class: "w-full rounded-4xl", alt: '' %>
+            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
+              <div class="relative mx-auto w-full sm:mx-0 shadow-xl rounded-xl">
+                <%= image_tag 'litetracker/snappi-ui.webp', class: "w-full rounded-xl", alt: '' %>
               </div>
             </div>
           </div>
