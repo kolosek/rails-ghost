@@ -4,6 +4,7 @@ class BlogsController < ApplicationController
 
 	def index
 		@posts = ghost_client.get_data(:posts, page: params[:page] || 1)
+		@featured = @posts.select {|p| p['featured']}.first(3)
 
 		if blog_override_exists?(:index)
 			render "#{app_name}/blogs/index"

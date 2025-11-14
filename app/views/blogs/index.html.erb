@@ -5,41 +5,44 @@
 	      Blog
 	    </div>    
 	    <p class="max-w-3xl mx-auto mt-6 mb-0 text-lead text-gray-600 dark:text-gray-400">Releases, insights, and company announcements</p>
-		</div>           
-	  <div class="max-w-[1200px] mx-auto py-16 sm:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-	    <div class="md:col-span-2 lg:col-span-3 text-gray-500 dark:text-gray-400">
-	        Featured
-	    </div>
-	    <% @posts.select {|p| p['featured']}.first(3).each do |post| %>              
-			  <div class="post tag-hash-news tag-hash-blog featured">
-			  	<a href="blog/<%= post['slug'] %>" class="group block mb-2">
-		        <figure>
-	            <div class="relative rounded-md overflow-hidden bg-gray-50 dark:bg-gray-800 
-	                    after:absolute after:top-0 after:left-0 after:w-full after:h-full after:ring-1 after:ring-inset after:ring-gray-900/5 dark:after:ring-gray-50/5 after:rounded-md
-	                            aspect-w-16 aspect-h-9">
-	                <% if  post['feature_image'].present? %>
-	                	<img class="!m-0 object-cover z-10 hover:scale-105 lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" src="<%= post['feature_image'] %>" alt="<%= post['title'] %>" loading="lazy" sizes="361px">
-	                <% else %>
-	                	<%= image_tag 'litetracker/lt-black-square.png', class: "!m-0 object-cover z-10 hover:scale-105 lazyautosizes ls-is-cached lazyloaded", sizes: "361px" %>
-	                <% end %>
-	            </div>
-		        </figure>     
-		    	</a>
-		      <h2>
-		        <a class="font-semibold hover:opacity-80 text-gray-900 dark:text-gray-200" href="blog/<%= post['slug'] %>">
-		        	<%= post['title'] %>  
-		        </a>
-		      </h2>
-		      <div class="mt-1 text-gray-500 dark:text-gray-400">
-		        <time class="capitalize">
-		           <%= post['created_at'].to_datetime.strftime("%B %d, %Y") %>
-		        </time>
-		      </div>
-			  </div>
-			<% end %>
-	  </div>
-	            
-  	<div data-pagination-feed="" class="max-w-[1200px] mx-auto py-16 sm:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+		</div>
+
+		<% if @featured.any? %>        
+		  <div class="max-w-[1200px] mx-auto py-16 sm:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+		    <div class="md:col-span-2 lg:col-span-3 text-gray-500 dark:text-gray-400">
+		        Featured
+		    </div>
+		    <% @featured.each do |post| %>              
+				  <div class="post tag-hash-news tag-hash-blog featured">
+				  	<a href="blog/<%= post['slug'] %>" class="group block mb-2">
+			        <figure>
+		            <div class="relative rounded-md overflow-hidden bg-gray-50 dark:bg-gray-800 
+		                    after:absolute after:top-0 after:left-0 after:w-full after:h-full after:ring-1 after:ring-inset after:ring-gray-900/5 dark:after:ring-gray-50/5 after:rounded-md
+		                            aspect-w-16 aspect-h-9">
+		                <% if  post['feature_image'].present? %>
+		                	<img class="!m-0 object-cover z-10 hover:scale-105 lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" src="<%= post['feature_image'] %>" alt="<%= post['title'] %>" loading="lazy" sizes="361px">
+		                <% else %>
+		                	<%= image_tag 'litetracker/lt-black-square.png', class: "!m-0 object-cover z-10 hover:scale-105 lazyautosizes ls-is-cached lazyloaded", sizes: "361px" %>
+		                <% end %>
+		            </div>
+			        </figure>     
+			    	</a>
+			      <h2>
+			        <a class="font-semibold hover:opacity-80 text-gray-900 dark:text-gray-200" href="blog/<%= post['slug'] %>">
+			        	<%= post['title'] %>  
+			        </a>
+			      </h2>
+			      <div class="mt-1 text-gray-500 dark:text-gray-400">
+			        <time class="capitalize">
+			           <%= post['created_at'].to_datetime.strftime("%B %d, %Y") %>
+			        </time>
+			      </div>
+				  </div>
+				<% end %>
+		  </div>
+		 <% end %>
+		            
+  	<div data-pagination-feed="" class="max-w-[1200px] mx-auto <%= 'py-16 sm:py-20' if @featured.any? %> grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       <div class="md:col-span-2 lg:col-span-3 text-gray-500 dark:text-gray-400">
           Latest
       </div>
