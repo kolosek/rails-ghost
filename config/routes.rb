@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   
   get '/blog', to: 'blogs#index'
   get '/blog/:slug', to: 'blogs#show'
-  get '/sitemap.xml.gz', to: 'sitemaps#show', format: :xml
+  get '/sitemap.xml', to: 'sitemaps#show', format: :xml
   get '/robots.txt', to: 'robots#show'
 
   match '*path', to: 'pages#show', via: :get
