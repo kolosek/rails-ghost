@@ -10,6 +10,20 @@
       <meta name="canonical"  content="<%= @post['canonical_url'] %>">
     <% end %>
 
+    <meta property="og:title" content="<%= @post.present? ? (@post['meta_title'].presence || @post['title']) : 'LiteTracker | Agile software development tool' %>" />
+    <meta property="og:description" content="<%= content_for?(:description) ? yield(:description) : (@post.present? ? (@post['excerpt'] || 'LiteTracker blog post') : 'LiteTracker blog') %>" />
+    <meta property="og:type" content="<%= @post.present? ? 'article' : 'website' %>" />
+    <meta property="og:url" content="<%= @post.present? ? @post['canonical_url'] : request.original_url %>" />
+
+    <% og_image = if @post.present? && @post['feature_image'].present?
+                     @post['feature_image']
+                   else
+                     image_url('litetracker/lt-black-square.png')
+                   end
+    %>
+    <meta property="og:image" content="<%= og_image %>" />
+    <meta property="og:site_name" content="LiteTracker" />
+
     <%= favicon_link_tag 'litetracker/favicon.ico' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>

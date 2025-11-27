@@ -1,4 +1,4 @@
-<% content_for :title, "#{@page['meta_title']}" %>
+<% content_for :title, (@page['meta_title'].presence || @page['title']) %>
 <% content_for :description, "#{@page['meta_description'] || truncate(strip_tags(@page['html']), length: 160, separator: ' ') }" %>
 
 <div class="outer xl:outer-xl post tag-hash-blog-grid">

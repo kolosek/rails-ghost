@@ -1,4 +1,5 @@
-<% content_for :title, "#{resolve_title_metadata(request.path)}" %>
+<% content_for :title, "#{resolve_title_metadata(request.path) || 'Onboard page'}" %>
+<% content_for :description, "A modern, visually engaging onboarding page for Litetracker that highlights a limited-time offer of $100 free credits. It features a hero section with a headline, subheader, and supporting imagery, followed by interactive sections for submitting user details or scheduling a call with launch experts. Key benefits—like fast deployment, premium security, and analytics dashboards—are emphasized, alongside social proof, platform statistics, and clear calls-to-action to get started or talk to sales. The design uses gradients, blur effects, and responsive layouts for a polished, professional look." %>
 
 <div class="bg-white text-gray-800 relative isolate antialiased min-h-screen">
   <div class="hidden pointer-events-none absolute inset-0 -z-10 overflow-hidden">

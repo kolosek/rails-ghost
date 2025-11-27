@@ -1,4 +1,6 @@
-<% content_for :title, "#{resolve_title_metadata(request.path)}" %>
+<% content_for :title, "#{resolve_title_metadata(request.path) || 'Features page'}" %>
+<% content_for :description, "Litetracker centralizes project management by giving teams a clear view of priorities, stories, and progress. Define and track stories, estimate effort, and prioritize work effortlessly. Automatic planning helps teams maintain a steady rhythm, while analytics provide insights from high-level trends down to project details. Additional tools—including notifications, mentions, search, file sharing, labels, blockers, and a powerful API—empower teams to collaborate efficiently and deliver their best work." %>
+
 
 <section id="features-hero">
   <div class="relative h-134 lg:mt-20">

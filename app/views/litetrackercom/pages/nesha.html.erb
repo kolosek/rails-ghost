@@ -1,4 +1,5 @@
-<% content_for :title, "#{resolve_title_metadata(request.path)}" %>
+<% content_for :title, "#{resolve_title_metadata(request.path) || 'Nesha page'}" %>
+<% content_for :description, "Note from the founder - Over 14 years, we’ve worked with diverse teams and many project management tools. Inspired by Pivotal Tracker, we aimed to create a responsive, user-friendly dashboard in its successor. Together with our users, we’re building something truly special for the future." %>
 
 <div class="bg-white text-gray-800 relative isolate antialiased min-h-screen">
   <div class="hidden pointer-events-none absolute inset-0 -z-10 overflow-hidden">

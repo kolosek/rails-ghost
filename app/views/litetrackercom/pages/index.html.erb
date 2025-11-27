@@ -1,3 +1,4 @@
+<% content_for :title, "#{resolve_title_metadata(request.path) || 'LiteTracker home page'}" %>
 <% content_for :scripts do %>
   <%= render 'litetrackercom/scripts/yt_script' %>
 <% end %>

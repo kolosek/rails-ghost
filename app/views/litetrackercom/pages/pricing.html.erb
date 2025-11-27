@@ -1,4 +1,5 @@
-<% content_for :title, "#{resolve_title_metadata(request.path)}" %>
+<% content_for :title, "#{resolve_title_metadata(request.path) || 'Pricing page'}" %>
+<% content_for :description, "Choose a plan that fits your needs—Free, Pro, or Custom. Transparent pricing, no hidden fees, and flexible billing options. All plans include essential project management features, unlimited projects, and seamless integrations, with advanced options for growing teams or special requirements. Trusted by top companies worldwide." %>
 
 <main>
   <section id="pricing-hero-section" class="bg-[#F6F6F8] relative px-6 pt-14 lg:px-8 opacity-0 animate-fade-in">

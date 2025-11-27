@@ -1,4 +1,5 @@
-<% content_for :title, "#{resolve_title_metadata(request.path)}" %>
+<% content_for :title, "#{resolve_title_metadata(request.path) || 'Integrations page'}" %>
+<% content_for :description, "Connect LiteTracker with your favorite tools to streamline workflows and boost productivity. Featured integrations like Zapier, GitHub, GitLab, and Slack help automate processes, sync development activity, and keep your team in the loop—without disrupting your existing setup." %>
 
 <main>
   <section id="integrations-hero-section" class="bg-[#F6F6F8] relative px-6 pt-14 sm:pt-24 lg:px-8 flex flex-col justify-start gap-y-24 shadow-[inset_0_-2px_4px_-3px_#0003]">
