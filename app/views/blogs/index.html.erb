@@ -34,7 +34,7 @@
 			      </h2>
 			      <div class="mt-1 text-gray-500 dark:text-gray-400">
 			        <time class="capitalize">
-			           <%= post['created_at'].to_datetime.strftime("%B %d, %Y") %>
+			           <%= post['published_at'].present? ? post['published_at'].to_datetime.strftime("%B %d, %Y") : post['created_at'].to_datetime.strftime("%B %d, %Y") %>
 			        </time>
 			      </div>
 				  </div>
@@ -68,15 +68,15 @@
 	          </a>
 		      </h2>
 		      <div class="mt-1 text-gray-500 dark:text-gray-400">
-	          <time class="capitalize" datetime="2024-10-22">
-	            <%= post['created_at'].to_datetime.strftime("%B %d, %Y") %>  
+	          <time class="capitalize">
+	            <%= post['published_at'].present? ? post['published_at'].to_datetime.strftime("%B %d, %Y") : post['created_at'].to_datetime.strftime("%B %d, %Y") %>  
 	          </time>
 		      </div>
 	      </div>
 	    <% end %>
   	</div>
 
-		<div align="center" style="padding-bottom: 50px;">
+		<div align="center" style="padding-bottom: 50px; padding-top: 50px;">
 	    <nav class="pagination" role="navigation" style="display: block">
 	    	<%= link_to 'Previous', blog_path(page: (params[:page] || 1).to_i - 1), class: 'newer-posts text-lg font-medium mr-2', style: "#{'pointer-events: none; color: gray' if params[:page].nil? || params[:page] <= "1"}" %>
 	    	<%= link_to 'Next', blog_path(page: (params[:page] || 1).to_i + 1), class: 'older-posts text-lg font-medium ml-2', style: "#{'pointer-events: none; color: gray' if @posts.size < 15}" %>

@@ -12,7 +12,7 @@
     </h1>    
 
     <p class="mt-6 text-base text-gray-400 dark:text-gray-500">
-      <time class="capitalize" datetime="2024-02-20"><%= @post['created_at'].to_datetime.strftime("%B %d, %Y") %></time>
+      <time class="capitalize" datetime="2024-02-20"><%= @post['published_at'].present? ? @post['published_at'].to_datetime.strftime("%B %d, %Y") : @post['created_at'].to_datetime.strftime("%B %d, %Y") %></time>
 
       <span class="mx-1.5 opacity-80">—</span>
       <% @post['authors'].each_with_index do |author, index| %>
