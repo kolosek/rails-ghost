@@ -28,6 +28,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- script for mobile menu handle -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module" async></script>
+
     <%= stylesheet_link_tag '/css/ghost.min.css', media: 'all', "data-turbo-track": "reload" %>
 
     <%= raw @settings['codeinjection_head'] %>
@@ -45,7 +49,7 @@
       <div class="relative w-[600px] h-[600px] -translate-y-2/3 translate-x-2/3 lg:-translate-y-1/2 lg:translate-x-1/2 bg-gradient-to-bl from-accent to-transparent rounded-full blur-[100px] opacity-50"></div>
     </div>
 
-    <div id="viewport" class="min-h-screen flex flex-col">
+    <div id="viewport" class="relative min-h-screen flex flex-col">
       <a href="#main" class="group sr-only focus:not-sr-only focus-within:not-sr-only outline-none">
         <span class="relative flex items-center justify-center w-full h-12 font-semibold bg-gray-900 text-gray-50 text-sm group-focus-within:ring group-focus:ring ring-1 ring-inset ring-accent dark:bg-gray-800/60">
             Skip to main content
@@ -55,12 +59,12 @@
         <%= render 'phrasing/initializer' %>
       </div>
 
-      <%= render 'litetrackercom/layouts/partials/header_ghost' %>
+      <%= render 'litetrackercom/layouts/partials/header' %>
       <main id="main" tabindex="-1" class="flex-none outline-none"> 
         <%= yield %>
       </main>
 
-      <%= render 'litetrackercom/layouts/partials/footer_ghost' %>
+      <%= render 'litetrackercom/layouts/partials/footer' %>
     </div>
     <%= raw @settings['codeinjection_foot'] %>
     <%= raw @post['codeinjection_foot'] if @post.present? %>

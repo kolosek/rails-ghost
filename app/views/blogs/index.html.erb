@@ -47,7 +47,7 @@
           Latest
       </div>
       <% @posts.each do |post| %>                
-	      <div data-pagination-post="" class="post tag-hash-news tag-hash-blog featured <%= post['feature_image'].present? ? '' : 'no-image' %>">
+	      <div data-pagination-post="" class="post shadow-lg p-4 pt-0 rounded-xl tag-hash-news tag-hash-blog featured <%= post['feature_image'].present? ? '' : 'no-image' %>">
 		      <a href="blog/<%= post['slug'] %>" class="group block mb-2">
 		        <figure>
 	            <div class="relative rounded-md overflow-hidden bg-gray-50 dark:bg-gray-800 

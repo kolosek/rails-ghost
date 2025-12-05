@@ -5,6 +5,7 @@ class BlogsController < ApplicationController
 	def index
 		@posts = ghost_client.get_data(:posts, page: params[:page] || 1)
 		@featured = @posts.select {|p| p['featured']}.first(3)
+		@hide_banner = true
 
 		if blog_override_exists?(:index)
 			render "#{app_name}/blogs/index"
@@ -13,6 +14,7 @@ class BlogsController < ApplicationController
 
 	def show
 		@post = ghost_client.get_data(:post, path: request.path)
+		@hide_banner = true
 
 		if @post.present?
 			if blog_override_exists?(:show)
