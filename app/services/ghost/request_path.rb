@@ -8,15 +8,26 @@ module Ghost
 
     def initialize(host = nil)
       @host = host
+      @domain_config = fetch_domain_config(host)
       @host_url = build_host_url(host)
       @api_key = build_api_key(host)
     end
 
     private
 
+    def fetch_domain_config(host)
+      return nil unless host.present?
+
+      domain_key = host.gsub(".", "")
+      Site::Config.domains&.send(domain_key)
+    end
+
     def build_host_url(host)
       configured_host = Site::Config.site.ghost_api_host.presence
       return "#{configured_host}/ghost/api" if configured_host
+
+      domain_host = @domain_config&.host.presence
+      return "#{domain_host}/ghost/api" if domain_host
 
       return "https://blog.#{host}/ghost/api" if host.present?
 
@@ -28,9 +39,7 @@ module Ghost
 
       return nil unless host.present?
 
-      domain_key = host.gsub(".", "")
-      domain_config = Site::Config.domains&.send(domain_key)
-      domain_config.presence
+      @domain_config&.key.presence
     end
 
     public

@@ -4,14 +4,20 @@ default: &default
     ghost_api_host: <%= ENV.fetch("GHOST_API_HOST") { '' } %>
     ghost_api_content_key: <%= ENV.fetch("GHOST_CONTENT_API_KEY") { '' } %>
   domains:
-    # Add domain-specific Ghost API keys here
-    # Format: domain_without_dots: api_key
-    # Example:
-    # examplecom: your_api_key_here
-    litetrackercom: <%= ENV.fetch("GHOST_CONTENT_API_KEY_LITETRACKER") { '' } %>
-    kolosekcom: <%= ENV.fetch("GHOST_CONTENT_API_KEY_KOLOSEK") { '' } %>
-    rubyci: <%= ENV.fetch("GHOST_CONTENT_API_KEY_RUBYCI") { '' } %>
-    fastci: <%= ENV.fetch("GHOST_CONTENT_API_KEY_FASTCI") { '' } %>
+    # Add domain-specific Ghost API configuration here
+    # Format: domain_without_dots: { host: ghost_blog_url, key: api_key }
+    litetrackercom:
+      host: https://blog.litetracker.com
+      key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_LITETRACKER") { '' } %>
+    kolosekcom:
+      host: https://blog.kolosek.com
+      key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_KOLOSEK") { '' } %>
+    rubyci:
+      host: https://blog.ruby.ci
+      key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_RUBYCI") { '' } %>
+    fastci:
+      host: https://blog.fast.ci
+      key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_FASTCI") { '' } %>
 
 
 test:
