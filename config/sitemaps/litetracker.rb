@@ -10,7 +10,7 @@ SitemapGenerator::Sitemap.create do
   add '/nesha', changefreq: 'monthly', priority: 0.8
 
   # --- Ghost blog posts ---
-  ghost_client = Ghost::Client.new
+  ghost_client = Ghost::Client.new('litetracker.com')
   page = 1
 
   loop do
