@@ -23,20 +23,15 @@ module Ghost
     end
 
     def build_host_url(host)
-      configured_host = Site::Config.site.ghost_api_host.presence
-      return "#{configured_host}/ghost/api" if configured_host
-
       domain_host = @domain_config&.host.presence
-      return "#{domain_host}/ghost/api" if domain_host
-
-      return "https://blog.#{host}/ghost/api" if host.present?
-
-      nil
+      if domain_host
+        "#{domain_host}/ghost/api"
+      else
+        raise InvalidPath.new("Ghost API host not configured for domain: #{host}")
+      end
     end
 
     def build_api_key(host)
-      return Site::Config.site.ghost_api_content_key.presence if Site::Config.site.ghost_api_content_key.present?
-
       return nil unless host.present?
 
       @domain_config&.key.presence
