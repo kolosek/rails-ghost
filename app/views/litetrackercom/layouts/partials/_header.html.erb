@@ -27,7 +27,7 @@
           <% else %>
             <div class="flex items-center gap-x-4">
               <a href="<%= app_login_url_with_utm('https://app.litetracker.com/login') %>" class="text-sm/6 font-semibold text-gray-900" data-umami-event="login-click">Log in</a>
-              <a href="<%= app_login_url_with_utm('https://app.litetracker.com/login') %>" class="text-sm/6 font-semibold text-gray-900" data-umami-event="signup-click">Sign up <span aria-hidden="true">&rarr;</span></a>
+              <a href="<%= app_login_url_with_utm('https://app.litetracker.com/register') %>" class="text-sm/6 font-semibold text-gray-900" data-umami-event="signup-click">Sign up <span aria-hidden="true">&rarr;</span></a>
             </div>
           <% end %>
         </div>
@@ -65,7 +65,7 @@
                       <a href="https://app.litetracker.com/dashboard" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" data-umami-event="dashboard-click">Go to Dashboard</a>
                     <% else %>
                       <a href="<%= app_login_url_with_utm('https://app.litetracker.com/login') %>" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" data-umami-event="login-click">Log in</a>
-                      <a href="<%= app_login_url_with_utm('https://app.litetracker.com/login') %>" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" data-umami-event="signup-click">Sign up</a>
+                      <a href="<%= app_login_url_with_utm('https://app.litetracker.com/register') %>" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" data-umami-event="signup-click">Sign up</a>
                     <% end %>
                   </div>
                 </div>
