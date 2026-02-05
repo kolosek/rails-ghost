@@ -1,0 +1,679 @@
+<% content_for :title, "#{resolve_title_metadata(request.path) || 'Best Pivotal Tracker Alternative | LiteTracker'}" %>
+<% content_for :description, 'Looking for a Pivotal Tracker alternative? LiteTracker is the most complete PT successor with all the features you loved - velocity tracking, story points, iterations, and more. Migrate in minutes.' %>
+
+<main>
+  <!-- Hero Section -->
+  <section id="hero-section" class="relative px-6 lg:px-8 overflow-hidden">
+    <div class="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-blue-400/20 via-purple-300/20 to-pink-300/20 rounded-full blur-[100px] opacity-60 will-change-transform pointer-events-none"></div>
+
+    <div class="z-10 mx-auto max-w-7xl flex flex-col items-center gap-10 py-16 md:py-24">
+      <!-- Badge -->
+      <div class="hidden sm:flex sm:justify-center">
+        <div class="rounded-full bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+          #1 Pivotal Tracker Alternative
+        </div>
+      </div>
+
+      <!-- Hero content -->
+      <div class="flex flex-col items-center gap-6 max-w-4xl text-center">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-balance text-gray-900">
+          The Pivotal Tracker Alternative You've Been Waiting For
+        </h1>
+        <p class="mx-auto max-w-2xl text-lg text-gray-600">
+          Pivotal Tracker has shut down, but your workflow doesn't have to change. LiteTracker brings you the same velocity-based planning, story points, and iteration tracking you love—with a modern interface and new features.
+        </p>
+      </div>
+
+      <!-- CTA buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="<%= app_login_url_with_utm('https://app.litetracker.com/register') %>" class="rounded-xl bg-black px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-black/80" data-umami-event="signup-click" data-umami-event-location="pt-alternative-hero">
+          Start Free Migration &rightarrow;
+        </a>
+        <a href="<%= app_login_url_with_utm('https://cal.com/neshaz/litetracker') %>" class="rounded-xl border border-gray-200 px-6 py-3.5 shadow-xs text-base font-semibold text-gray-900 hover:bg-gray-100" data-umami-event="cta-demo" data-umami-event-location="pt-alternative-hero">
+          Book a Demo <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <!-- Social proof -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <div class="flex -space-x-2">
+          <img src="https://i.pravatar.cc/32?img=<%= rand(1..70) %>" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+          <img src="https://i.pravatar.cc/32?img=<%= rand(1..70) %>" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+          <img src="https://i.pravatar.cc/32?img=<%= rand(1..70) %>" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+          <img src="https://i.pravatar.cc/32?img=<%= rand(1..70) %>" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+          <img src="https://i.pravatar.cc/32?img=<%= rand(1..70) %>" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="text-sm text-gray-600">Trusted by 500+ teams migrating from Pivotal Tracker</span>
+        </div>
+      </div>
+
+      <!-- Hero image -->
+      <div class="w-full max-w-5xl mt-8 rounded-2xl bg-white p-2 border border-gray-200 shadow-2xl">
+        <div class="rounded-xl overflow-hidden">
+          <%= image_tag 'litetracker/default.png', class: "w-full h-full object-cover", alt: 'LiteTracker - Pivotal Tracker Alternative' %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Switch Section -->
+  <section id="why-switch" class="relative px-6 lg:px-8 bg-gray-50">
+    <div class="mx-auto max-w-7xl py-16 sm:py-24">
+      <div class="mx-auto max-w-2xl text-center mb-16">
+        <div class="flex items-center justify-center text-orange text-xs mb-4">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          <p class="pl-1 font-bold">Why LiteTracker</p>
+        </div>
+        <h2 class="text-heading">Why Teams Choose LiteTracker</h2>
+        <p class="mt-4 text-subheading">We built LiteTracker for Pivotal Tracker fans, by Pivotal Tracker fans.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl p-8 border border-[#E6E6EB]">
+          <h3 class="text-xl font-semibold text-gray-900">Familiar Interface</h3>
+          <p class="mt-4 text-sm/6 text-gray-600">Same workflow you know and love. Story states, velocity, iterations—it all works the way you expect.</p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-[#E6E6EB]">
+          <h3 class="text-xl font-semibold text-gray-900">1-Minute Migration</h3>
+          <p class="mt-4 text-sm/6 text-gray-600">Import your projects, stories, and history directly from Pivotal Tracker. No data left behind.</p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-[#E6E6EB]">
+          <h3 class="text-xl font-semibold text-gray-900">Modern & Fast</h3>
+          <p class="mt-4 text-sm/6 text-gray-600">Built with modern technology for speed. No more waiting for pages to load.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Comparison Section -->
+  <section id="comparison" class="relative px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl py-16 sm:py-24 flex items-center flex-col justify-start gap-y-16 w-full">
+      <div class="mx-auto max-w-2xl text-center">
+        <div class="flex items-center justify-center text-blue-dark text-xs mb-4">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+          <p class="pl-1 font-bold">Feature Comparison</p>
+        </div>
+        <h2 class="text-heading">LiteTracker vs Pivotal Tracker</h2>
+        <p class="mt-4 text-subheading">Everything you had, plus more.</p>
+      </div>
+
+      <div class="flex flex-col gap-16 items-center justify-center w-full max-w-4xl px-2">
+        <!-- Header -->
+        <div class="hidden sm:flex items-center justify-center gap-2.5 w-full">
+          <div class="flex-grow min-h-11 w-px"></div>
+          <div class="flex-grow flex flex-col items-center justify-center gap-6 w-px">
+            <div class="flex flex-col items-center justify-center gap-2 w-full">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden">
+                <!-- Pivotal Tracker Icon -->
+                <svg viewBox="0 0 32 32" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="6" fill="#4A9187"/>
+                  <path d="M16 6L8 16l8 10 8-10L16 6z" fill="#357C72"/>
+                  <path d="M16 6l8 10-8 4V6z" fill="#5AAFA3"/>
+                  <path d="M16 20l-8-4 8-10v14z" fill="#fff" fill-opacity="0.9"/>
+                </svg>
+              </div>
+              <h6 class="font-medium text-xl">Pivotal Tracker</h6>
+              <p class="text-sm text-red-500 font-medium">Shut Down</p>
+            </div>
+          </div>
+          <div class="flex-grow flex flex-col items-center justify-center gap-6 w-px bg-green-50 rounded-t-2xl py-4">
+            <div class="flex flex-col items-center justify-center gap-2 w-full">
+              <!-- LiteTracker Favicon-style Icon -->
+              <div class="w-12 h-12 rounded-xl bg-[#1a1a1a] flex items-center justify-center">
+                <svg viewBox="0 0 24 24" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="4" width="18" height="3" rx="1" fill="#22c55e"/>
+                  <rect x="3" y="10" width="12" height="3" rx="1" fill="#22c55e" fill-opacity="0.7"/>
+                  <rect x="3" y="16" width="15" height="3" rx="1" fill="#22c55e" fill-opacity="0.4"/>
+                </svg>
+              </div>
+              <h6 class="font-medium text-xl">LiteTracker</h6>
+              <p class="text-sm text-green-600 font-medium">Active & Growing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Features -->
+        <div class="flex flex-col gap-4 items-center justify-center w-full">
+          <div class="flex w-full text-left">
+            <p class="text-sm font-semibold">Core Features</p>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full border-t border-[#E6E6EB]">
+            <!-- Row -->
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Story Points & Estimation</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Velocity Tracking</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Iteration Planning</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Accept/Reject Workflow</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Epics</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Icebox & Backlog</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Labels & Filtering</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrations -->
+        <div class="flex flex-col gap-4 items-center justify-center w-full">
+          <div class="flex w-full text-left">
+            <p class="text-sm font-semibold">Integrations</p>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full border-t border-[#E6E6EB]">
+            <!-- GitHub -->
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start gap-2 py-4 w-px border-r border-b border-[#E6E6EB]">
+                <%= image_tag 'litetracker/integrations-github.avif', class: "h-5 w-5", alt: "GitHub" %>
+                <p class="text-left text-sm leading-[21px] font-normal">GitHub</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <!-- GitLab -->
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start gap-2 py-4 w-px border-r border-b border-[#E6E6EB]">
+                <%= image_tag 'litetracker/integrations-gitlab.avif', class: "h-5 w-5", alt: "GitLab" %>
+                <p class="text-left text-sm leading-[21px] font-normal">GitLab</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <!-- Gitea -->
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start gap-2 py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-5" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M395.9 484.2l-126.9-61c-12.5-6-17.9-21.2-11.8-33.8l61-126.9c6-12.5 21.2-17.9 33.8-11.8 17.2 8.3 27.1 13 27.1 13l-.5-51.8c0-6.3 5.1-11.4 11.4-11.4H400c6.3 0 11.4 5.1 11.4 11.4v51.8s9.9-4.8 27.1-13c12.5-6 27.7-.6 33.8 11.8l61 126.9c6 12.5.6 27.7-11.8 33.8l-126.9 61c-12.5 6-27.7.6-33.7-11.9z" fill="#609926"/>
+                  <path d="M320 32C144.6 32 2 174.6 2 350s142.6 318 318 318 318-142.6 318-318S495.4 32 320 32zm0 595.2C168.5 627.2 44.8 503.5 44.8 352S168.5 76.8 320 76.8 595.2 200.5 595.2 352 471.5 627.2 320 627.2z" fill="#609926"/>
+                </svg>
+                <p class="text-left text-sm leading-[21px] font-normal">Gitea</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <span class="text-sm leading-[21px] text-gray-400">-</span>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <!-- Slack -->
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start gap-2 py-4 w-px border-r border-b border-[#E6E6EB]">
+                <%= image_tag 'litetracker/integrations-slack.png', class: "h-5 w-5", alt: "Slack" %>
+                <p class="text-left text-sm leading-[21px] font-normal">Slack</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <!-- Zapier -->
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start gap-2 py-4 w-px border-r border-b border-[#E6E6EB]">
+                <%= image_tag 'litetracker/integrations-webhook-zapier.avif', class: "h-5 w-5", alt: "Zapier" %>
+                <p class="text-left text-sm leading-[21px] font-normal">Zapier</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <span class="text-sm leading-[21px] text-gray-400">-</span>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <!-- Webhooks -->
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start gap-2 py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                </svg>
+                <p class="text-left text-sm leading-[21px] font-normal">Webhooks</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <svg class="h-5 w-4 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platform & Support -->
+        <div class="flex flex-col gap-4 items-center justify-center w-full">
+          <div class="flex w-full text-left">
+            <p class="text-sm font-semibold">Platform & Support</p>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full border-t border-[#E6E6EB]">
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Mobile Apps (iOS & Android)</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <span class="text-sm leading-[21px] text-gray-400">-</span>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Direct PT Import</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <span class="text-sm leading-[21px] text-gray-400">N/A</span>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-normal">Onboarding Support</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <span class="text-sm leading-[21px] text-gray-400">-</span>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center w-full">
+              <div class="grow flex items-center justify-start py-4 w-px border-r border-b border-[#E6E6EB]">
+                <p class="w-full text-left text-sm leading-[21px] font-medium">Active Development</p>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-r border-b border-[#E6E6EB]">
+                <span class="text-sm leading-[21px] text-red-500 font-medium">Shut Down</span>
+              </div>
+              <div class="grow-[0.4] sm:grow flex items-center justify-center py-4 w-px border-b border-[#E6E6EB] bg-green-50">
+                <svg class="h-5 w-4 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Migration Section -->
+  <section id="migration" class="relative px-6 lg:px-8">
+    <div class="relative mx-auto max-w-7xl py-16 sm:pt-24">
+      <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:content-center">
+          <div class="flex flex-col gap-10 px-6 lg:px-0">
+            <div class="flex flex-col gap-4">
+              <p class="flex items-center gap-1 text-green-dark font-semibold text-sm">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                </svg>
+                Easy Migration
+              </p>
+              <p class="text-heading tracking-tight text-black">Migrate from Pivotal Tracker in Minutes</p>
+              <p class="text-subheading">Our automatic import tool brings over everything—projects, stories, epics, labels, comments, and history. Your team can start working immediately.</p>
+              <ul class="space-y-3 text-subheading">
+                <li class="flex items-start">
+                  <span class="text-green-dark mr-2">•</span>
+                  All stories, epics, and labels preserved
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-dark mr-2">•</span>
+                  Comments and activity history included
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-dark mr-2">•</span>
+                  Team members and permissions maintained
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-dark mr-2">•</span>
+                  Free onboarding assistance available
+                </li>
+              </ul>
+            </div>
+            <div class="h-11 w-fit">
+              <a href="<%= app_login_url_with_utm('https://app.litetracker.com/register') %>" class="flex items-center justify-center rounded-xl h-full pr-4 pl-5 border border-gray-200 text-black font-semibold hover:bg-gray-100" data-umami-event="signup-click" data-umami-event-location="pt-alternative-migration">
+                <span>Start Free Migration</span>
+                <svg class="h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="sm:px-6 lg:px-0">
+            <div class="relative px-6 sm:mx-auto sm:max-w-2xl sm:pl-0 sm:pr-0 lg:mx-0 lg:max-w-none">
+              <div class="relative mx-auto w-full sm:mx-0">
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-xl">
+                  <div class="flex items-center gap-4 mb-6">
+                    <!-- Pivotal Tracker Icon -->
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden">
+                      <svg viewBox="0 0 32 32" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="6" fill="#4A9187"/>
+                        <path d="M16 6L8 16l8 10 8-10L16 6z" fill="#357C72"/>
+                        <path d="M16 6l8 10-8 4V6z" fill="#5AAFA3"/>
+                        <path d="M16 20l-8-4 8-10v14z" fill="#fff" fill-opacity="0.9"/>
+                      </svg>
+                    </div>
+                    <svg class="w-8 h-8 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                    <!-- LiteTracker Favicon-style Icon -->
+                    <div class="w-12 h-12 rounded-xl bg-[#1a1a1a] flex items-center justify-center">
+                      <svg viewBox="0 0 24 24" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="4" width="18" height="3" rx="1" fill="#22c55e"/>
+                        <rect x="3" y="10" width="12" height="3" rx="1" fill="#22c55e" fill-opacity="0.7"/>
+                        <rect x="3" y="16" width="15" height="3" rx="1" fill="#22c55e" fill-opacity="0.4"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between text-sm">
+                      <span class="text-gray-600">Projects</span>
+                      <span class="text-green-dark font-medium">12 imported</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2">
+                      <div class="bg-green-dark h-2 rounded-full" style="width: 100%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                      <span class="text-gray-600">Stories</span>
+                      <span class="text-green-dark font-medium">2,847 imported</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2">
+                      <div class="bg-green-dark h-2 rounded-full" style="width: 100%"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                      <span class="text-gray-600">Epics</span>
+                      <span class="text-green-dark font-medium">156 imported</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2">
+                      <div class="bg-green-dark h-2 rounded-full" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <p class="text-green-dark text-sm mt-6 text-center font-medium">Migration complete!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="relative px-6 lg:px-8 bg-[#f6f6f8] shadow-[inset_0_2px_4px_-3px_#0003,inset_0_-2px_4px_-3px_#0003]">
+    <div class="mx-auto max-w-7xl py-16 sm:py-24">
+      <div class="mx-auto max-w-2xl text-center mb-16">
+        <div class="flex items-center justify-center text-green-dark text-xs mb-4">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+          </svg>
+          <p class="pl-1 font-bold">Testimonials</p>
+        </div>
+        <h2 class="text-heading">What PT Users Are Saying</h2>
+        <p class="mt-4 text-subheading">Teams who switched from Pivotal Tracker share their experience</p>
+      </div>
+
+      <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div class="break-inside-avoid p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
+          <p class="text-sm mb-8 text-[#47474f]">"Of all the PT-alternatives I've been checking out, yours is the first that has given me the chance for a real hands-on with a viable alternative"</p>
+          <div class="text-13 flex items-center gap-4">
+            <img src="https://i.pravatar.cc/32?img=11" alt="" class="w-8 h-8 rounded-full object-cover">
+            <div>
+              <h6 class="font-medium text-gray-700">Paul Gallagher</h6>
+              <p class="text-gray-500 text-sm">Founder, Eventis</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="break-inside-avoid p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
+          <p class="text-sm mb-8 text-[#47474f]">"So far LiteTracker is my favourite potential successor. The migration was seamless and my team didn't skip a beat."</p>
+          <div class="text-13 flex items-center gap-4">
+            <img src="https://i.pravatar.cc/32?img=33" alt="" class="w-8 h-8 rounded-full object-cover">
+            <div>
+              <h6 class="font-medium text-gray-700">Jevon Wright</h6>
+              <p class="text-gray-500 text-sm">Developer, Adaptory</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="break-inside-avoid p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
+          <p class="text-sm mb-8 text-[#47474f]">"This has all the features that I wanted in initial release. Looking forward for more."</p>
+          <div class="text-13 flex items-center gap-4">
+            <img src="https://i.pravatar.cc/32?img=52" alt="" class="w-8 h-8 rounded-full object-cover">
+            <div>
+              <h6 class="font-medium text-gray-700">William Sela</h6>
+              <p class="text-gray-500 text-sm">Head of Product, HJI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="break-inside-avoid p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
+          <p class="text-sm mb-8 text-[#47474f]">"The experience is really snappy. Very close to original Pivotal Tracker experience."</p>
+          <div class="text-13 flex items-center gap-4">
+            <img src="https://i.pravatar.cc/32?img=68" alt="" class="w-8 h-8 rounded-full object-cover">
+            <div>
+              <h6 class="font-medium text-gray-700">Ant Wilson</h6>
+              <p class="text-gray-500 text-sm">Developer, Supadb</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="break-inside-avoid p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
+          <p class="text-sm mb-8 text-[#47474f]">"Finally, an alternative that actually understands how Pivotal Tracker worked. The velocity tracking is spot on."</p>
+          <div class="text-13 flex items-center gap-4">
+            <img src="https://i.pravatar.cc/32?img=12" alt="" class="w-8 h-8 rounded-full object-cover">
+            <div>
+              <h6 class="font-medium text-gray-700">Sarah Chen</h6>
+              <p class="text-gray-500 text-sm">Engineering Lead, TechCorp</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="break-inside-avoid p-8 border border-gray-100 rounded-3xl bg-white shadow-2xl shadow-gray-600/10">
+          <p class="text-sm mb-8 text-[#47474f]">"We migrated 5 years of project history in under 10 minutes. Couldn't believe how smooth it was."</p>
+          <div class="text-13 flex items-center gap-4">
+            <img src="https://i.pravatar.cc/32?img=25" alt="" class="w-8 h-8 rounded-full object-cover">
+            <div>
+              <h6 class="font-medium text-gray-700">Marcus Johnson</h6>
+              <p class="text-gray-500 text-sm">CTO, StartupXYZ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <%= render "litetrackercom/sections/faq" %>
+
+  <!-- CTA Section -->
+  <section id="cta" class="relative px-6 lg:px-8">
+    <div class="relative mx-auto max-w-7xl py-16 sm:py-24 flex items-center flex-col justify-start gap-y-24">
+      <div class="grid grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
+        <div class="flex flex-col gap-10 px-2 xs:px-6 lg:px-0">
+          <div class="flex flex-col gap-4 text-center xs:text-left">
+            <p class="flex items-center justify-center xs:justify-start gap-1 text-green-dark font-semibold text-sm">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+              Get Started Today
+            </p>
+            <p class="text-heading font-medium tracking-tight text-black">Continue Your Work Without Missing a Beat</p>
+            <p class="text-subheading">
+              Join hundreds of teams who have already migrated from Pivotal Tracker. Import your data and keep working—LiteTracker has everything you need.
+            </p>
+          </div>
+          <div class="flex items-center justify-center xs:justify-start gap-4">
+            <div class="h-11 w-fit">
+              <a href="<%= app_login_url_with_utm('https://app.litetracker.com/register') %>" class="bg-black flex items-center justify-center rounded-xl h-full px-4 text-sm/6 font-semibold text-white border border-black" data-umami-event="signup-click" data-umami-event-location="pt-alternative-cta">
+                <span>Start Free Migration</span>
+                <svg class="h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </a>
+            </div>
+            <div class="h-11 w-fit">
+              <a href="<%= app_login_url_with_utm('https://cal.com/neshaz/litetracker') %>" class="flex items-center justify-center rounded-xl h-full px-4 text-sm/6 border border-gray-200 text-black font-semibold hover:bg-gray-100" data-umami-event="cta-demo" data-umami-event-location="pt-alternative-cta">
+                <span>Book a Demo</span>
+                <svg class="h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grow flex items-center justify-start sm:px-6 lg:px-0 max-w-md w-full xs:w-px">
+          <div class="grow h-80 xs:h-112 aspect-square relative px-2 xs:px-6 mx-auto rounded-2xl sm:pl-0 sm:pr-0 lg:mx-0">
+            <div class="xs:absolute shadow-xl rounded-2xl overflow-hidden">
+              <%= image_tag 'litetracker/default.png', alt: "LiteTracker Dashboard", class: "w-full h-full rounded-2xl object-cover object-center" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
