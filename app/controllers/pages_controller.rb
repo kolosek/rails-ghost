@@ -26,7 +26,9 @@ class PagesController < ApplicationController
 	private
 
 	def resolve_layout
-		if !page_exists?(request.path) && layout_exists?(:page)
+		if request.path == '/launcherr'
+			"#{app_name}/layouts/launcherr"
+		elsif !page_exists?(request.path) && layout_exists?(:page)
 			"#{app_name}/layouts/page"
 		else
 			"#{app_name}/layouts/application"
