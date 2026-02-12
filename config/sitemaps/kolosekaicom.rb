@@ -5,6 +5,4 @@ SitemapGenerator::Sitemap.create do
   add '/about', changefreq: 'monthly', priority: 0.8
   add '/featured', changefreq: 'monthly', priority: 0.8
   add '/contact', changefreq: 'monthly', priority: 0.8
-  add '/process', changefreq: 'monthly', priority: 0.8
-  add '/code-review', changefreq: 'monthly', priority: 0.8
 end
