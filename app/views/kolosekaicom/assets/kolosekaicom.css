@@ -163,10 +163,10 @@ input { font-family: inherit; }
   50% { opacity: 0.8; transform: translateY(-10px) scale(1.15); }
 }
 
-/* ========== HIDE HERO BACKGROUNDS ON INDEX ONLY (remove this block to bring back) ========== */
-.lr-hero-index::before,
-.lr-hero-index::after,
-.lr-hero-index .lr-hero-bg-nodes {
+/* ========== HIDE HERO BACKGROUNDS ON ALL PAGES (remove this block to bring back) ========== */
+.lr-hero::before,
+.lr-hero::after,
+.lr-hero-bg-nodes {
   display: none !important;
 }
 /* ========== END HIDE ========== */
