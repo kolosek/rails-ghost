@@ -32,10 +32,10 @@ RSpec.describe "Kolosekaicom::Pages", type: :request do
     it "contains pricing cards" do
       get "/"
 
-      expect(response.body).to include("Discovery Sprint")
       expect(response.body).to include("Project-Based")
+      expect(response.body).to include("Time & Materials")
       expect(response.body).to include("Dedicated Team")
-      expect(response.body).to include("Enterprise")
+      expect(response.body).to include("Most Popular")
     end
 
     it "contains metric cards" do
@@ -176,13 +176,22 @@ RSpec.describe "Kolosekaicom::Pages", type: :request do
       expect(response.body).to include("pricing")
     end
 
-    it "contains all four pricing tiers" do
+    it "contains all three pricing tiers" do
       get "/pricing"
 
       expect(response.body).to include("Project-Based")
       expect(response.body).to include("Time & Materials")
       expect(response.body).to include("Dedicated Team")
-      expect(response.body).to include("Enterprise")
+    end
+
+    it "contains comparison table" do
+      get "/pricing"
+
+      expect(response.body).to include("Compare")
+      expect(response.body).to include("lr-compare-table")
+      expect(response.body).to include("Core")
+      expect(response.body).to include("Collaboration")
+      expect(response.body).to include("Support")
     end
 
     it "contains pricing FAQ section" do
