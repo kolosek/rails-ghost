@@ -13,8 +13,8 @@ default: &default
       host: https://blog.kolosek.com
       key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_KOLOSEK") { '' } %>
     kolosekcom:
-      host: <%= ENV.fetch("GHOST_API_HOST_KOLOSEKAI") { '' } %>
-      key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_KOLOSEKAI") { '' } %>
+      host: <%= ENV.fetch("GHOST_API_HOST_KOLOSEK") { '' } %>
+      key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_KOLOSEK") { '' } %>
     rubyci:
       host: https://blog.ruby.ci
       key: <%= ENV.fetch("GHOST_CONTENT_API_KEY_RUBYCI") { '' } %>
