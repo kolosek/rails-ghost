@@ -1,0 +1,63 @@
+<svg width="520" height="340" viewBox="0 0 520 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="progGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#635BFF"/>
+      <stop offset="100%" stop-color="#8B85FF"/>
+    </linearGradient>
+    <filter id="s4Shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#0A2540" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Card -->
+  <rect width="520" height="340" rx="14" fill="#FFFFFF" filter="url(#s4Shadow)"/>
+  <rect x="0.5" y="0.5" width="519" height="339" rx="13.5" stroke="#E3E8EF" stroke-width="1"/>
+
+  <!-- Top bar -->
+  <rect x="0" y="0" width="520" height="56" rx="14" fill="#FAFBFC"/>
+  <rect x="0" y="42" width="520" height="14" fill="#FAFBFC"/>
+  <line x1="0" y1="56" x2="520" y2="56" stroke="#E3E8EF" stroke-width="1"/>
+  <text x="24" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#0A2540">Sprint Deliverables</text>
+  <rect x="400" y="16" rx="8" width="100" height="24" fill="#ECFDF3"/>
+  <text x="450" y="33" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#16A34A" text-anchor="middle">On track</text>
+
+  <!-- Metric -->
+  <text x="24" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" letter-spacing="0.5" fill="#8792A2">OUTCOMES DELIVERED</text>
+  <text x="24" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="700" fill="#0A2540">5 of 5</text>
+  <text x="148" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#8792A2">in 30 days</text>
+
+  <!-- 1. Codebase Review -->
+  <text x="24" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#0A2540">Codebase Review</text>
+  <rect x="24" y="170" width="410" height="6" rx="3" fill="#F0F2F5"/>
+  <rect x="24" y="170" width="410" height="6" rx="3" fill="url(#progGrad)"/>
+  <text x="444" y="177" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#16A34A">Done</text>
+  <!-- Checkmark -->
+  <circle cx="490" cy="173" r="10" fill="#ECFDF3"/>
+  <path d="M485 173l3 3 5-6" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 2. AI Feature -->
+  <text x="24" y="204" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#0A2540">AI Feature Shipped</text>
+  <rect x="24" y="212" width="410" height="6" rx="3" fill="#F0F2F5"/>
+  <rect x="24" y="212" width="410" height="6" rx="3" fill="url(#progGrad)"/>
+  <text x="444" y="219" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#16A34A">Done</text>
+  <circle cx="490" cy="215" r="10" fill="#ECFDF3"/>
+  <path d="M485 215l3 3 5-6" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 3. Performance -->
+  <text x="24" y="246" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#0A2540">Performance Boost</text>
+  <rect x="24" y="254" width="410" height="6" rx="3" fill="#F0F2F5"/>
+  <rect x="24" y="254" width="328" height="6" rx="3" fill="#635BFF"/>
+  <text x="444" y="261" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#8792A2">80%</text>
+
+  <!-- 4. Bottleneck Cleanup -->
+  <text x="24" y="286" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#0A2540">Bottleneck Cleanup</text>
+  <rect x="24" y="294" width="410" height="6" rx="3" fill="#F0F2F5"/>
+  <rect x="24" y="294" width="287" height="6" rx="3" fill="#635BFF"/>
+  <text x="444" y="301" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#8792A2">70%</text>
+
+  <!-- 5. Roadmap -->
+  <text x="24" y="326" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#0A2540">Roadmap Delivered</text>
+  <rect x="24" y="334" width="410" height="6" rx="3" fill="#F0F2F5"/>
+  <rect x="24" y="334" width="205" height="6" rx="3" fill="#A5A0FF"/>
+  <text x="444" y="341" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#8792A2">50%</text>
+</svg>
