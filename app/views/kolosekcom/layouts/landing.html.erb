@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>30-Day SaaS Acceleration Sprint | Kolosek</title>
+  <meta name="description" content="Ship an AI feature, fix bottlenecks, and get a clear roadmap — all in 30 days for a fixed price. Kolosek's SaaS Acceleration Sprint.">
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'kolosek/favicon.svg' %>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/files/kolosekcom.css">
+  <%= stylesheet_link_tag '/css/ghost.min.css', media: 'all', "data-turbo-track": "reload" %>
+</head>
+<body>
+  <%= render "kolosekcom/partials/header_landing" %>
+  <%= yield %>
+  <%= render "kolosekcom/partials/footer_landing" %>
+
+  <script src="/files/kolosekcom.js"></script>
+</body>
+</html>
