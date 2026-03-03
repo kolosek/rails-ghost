@@ -3,7 +3,7 @@ class FormsController < ApplicationController
 
   def create
     @form = Form.new(form_params)
-    @form.data = @form.data.merge("source_url" => request.referer)
+    @form.source_url = request.referer
 
     if @form.save
       respond_to do |format|
