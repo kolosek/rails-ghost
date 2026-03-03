@@ -17,21 +17,23 @@
       <!-- Hero content -->
       <div class="flex flex-col items-center gap-6 max-w-4xl text-center">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-balance text-gray-900">
-          The Pivotal Tracker Alternative You've Been Waiting For
+          Inspired by Pivotal Tracker
         </h1>
         <p class="mx-auto max-w-2xl text-lg text-gray-600">
-          Pivotal Tracker has shut down, but your workflow doesn't have to change. LiteTracker brings you the same velocity-based planning, story points, and iteration tracking you love—with a modern interface and new features.
+          Pivotal Tracker shut down. Your workflow doesn't have to. Get the same velocity tracking, story points, and iterations—modernized.
         </p>
       </div>
 
-      <!-- CTA buttons -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-        <a href="<%= app_login_url_with_utm('https://app.litetracker.com/register') %>" class="rounded-xl bg-black px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-black/80" data-umami-event="signup-click" data-umami-event-location="pt-alternative-hero">
-          Start Free Migration &rightarrow;
-        </a>
-        <a href="<%= app_login_url_with_utm('https://cal.com/neshaz/litetracker') %>" class="rounded-xl border border-gray-200 px-6 py-3.5 shadow-xs text-base font-semibold text-gray-900 hover:bg-gray-100" data-umami-event="cta-demo" data-umami-event-location="pt-alternative-hero">
-          Book a Demo <span aria-hidden="true">→</span>
-        </a>
+      <!-- CTA email form -->
+      <div id="form_response" class="w-full max-w-lg pt-4">
+        <%= form_with url: forms_path, method: :post, class: "flex flex-col sm:flex-row items-center gap-3" do |f| %>
+          <input type="hidden" name="form[form_type]" value="migration">
+          <input type="hidden" name="form[data][source]" value="pivotal-tracker-alternative">
+          <input type="email" name="form[email]" required placeholder="Enter your email" class="flex-1 w-full rounded-xl border border-gray-200 px-5 py-3.5 text-base text-gray-900 shadow-xs placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-black/10">
+          <button type="submit" class="whitespace-nowrap rounded-xl bg-black px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-black/80" data-umami-event="migration-email-submit" data-umami-event-location="pt-alternative-hero">
+            Start Free Migration &rightarrow;
+          </button>
+        <% end %>
       </div>
 
       <!-- Social proof -->
