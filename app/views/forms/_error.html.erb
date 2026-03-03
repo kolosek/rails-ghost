@@ -1,0 +1,8 @@
+<div id="form_response">
+  <p>There was an error submitting your form:</p>
+  <ul>
+    <% form.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>

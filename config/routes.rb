@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     resources :page_metadata, except: :show
   end
   
+  resources :forms, only: [:create]
   resources :files, only: [:show], param: :file_name
 
   # Defines the root path route ("/")

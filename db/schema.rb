@@ -10,9 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_11_04_083716) do
+ActiveRecord::Schema[7.1].define(version: 2026_03_03_130048) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "forms", force: :cascade do |t|
+    t.string "form_type", null: false
+    t.string "name"
+    t.string "email"
+    t.jsonb "data", default: {}
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_forms_on_email"
+    t.index ["form_type"], name: "index_forms_on_form_type"
+  end
 
   create_table "page_metadata", force: :cascade do |t|
     t.string "slug"
