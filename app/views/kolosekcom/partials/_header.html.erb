@@ -13,6 +13,7 @@
       <a href="/contact" data-umami-event="nav-contact">Contact</a>
       <% if current_user&.admin? %>
         <a href="/admin" class="lr-btn lr-mobile-nav-cta" data-umami-event="nav-admin">Admin</a>
+        <a href="<%= destroy_user_session_path %>" class="lr-btn lr-mobile-nav-cta" data-umami-event="nav-logout">Logout</a>
       <% elsif current_user %>
         <a href="<%= destroy_user_session_path %>" class="lr-btn lr-mobile-nav-cta" data-umami-event="nav-logout">Logout</a>
       <% end %>
@@ -22,6 +23,7 @@
       <a href="https://poslovi.kolosek.com" target="_blank" class="lr-badge-hiring" data-umami-event="nav-careers">We are hiring</a>
       <% if current_user&.admin? %>
         <a href="/admin" class="lr-btn" data-umami-event="nav-admin">Admin</a>
+        <a href="<%= destroy_user_session_path %>" class="lr-btn" data-umami-event="nav-logout">Logout</a>
       <% elsif current_user %>
         <a href="<%= destroy_user_session_path %>" class="lr-btn" data-umami-event="nav-logout">Logout</a>
       <% end %>
