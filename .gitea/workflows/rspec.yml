@@ -101,7 +101,11 @@ jobs:
       - name: Merge timing data from all nodes
         run: |
           TIMING_DIR=/mnt/data/gitea/rspec_timings/${{ github.repository_owner }}/${{ github.event.repository.name }}
-          cat $TIMING_DIR/node_*.txt | \
-            awk '{files[$2]=$1} END {for(f in files) print files[f], f}' | \
-            sort -k2 > $TIMING_DIR/timings.txt
-          echo "Total timing entries: $(wc -l < $TIMING_DIR/timings.txt)"
+          if ls $TIMING_DIR/node_*.txt 1>/dev/null 2>&1; then
+            cat $TIMING_DIR/node_*.txt | \
+              awk '{files[$2]=$1} END {for(f in files) print files[f], f}' | \
+              sort -k2 > $TIMING_DIR/timings.txt
+            echo "Total timing entries: $(wc -l < $TIMING_DIR/timings.txt)"
+          else
+            echo "No node timing files found, skipping merge"
+          fi
