@@ -84,8 +84,12 @@ jobs:
       - name: Save node timing data
         if: always()
         run: |
+          echo "Checking /mnt/data access:"
+          ls -la /mnt/ || echo "/mnt not accessible"
+          ls -la /mnt/data/ || echo "/mnt/data not accessible"
+          ls -la /mnt/data/gitea/ || echo "/mnt/data/gitea not accessible"
           TIMING_DIR=/mnt/data/gitea/rspec_timings/${{ github.repository_owner }}/${{ github.event.repository.name }}
-          mkdir -p $TIMING_DIR
+          mkdir -p $TIMING_DIR && echo "Created $TIMING_DIR" || echo "Failed to create $TIMING_DIR"
           if [ -f tmp/rspec_results.json ]; then
             jq -r '.examples[] | "\(.run_time) \(.file_path | ltrimstr("./"))"' tmp/rspec_results.json | \
               awk '{files[$2]+=$1} END {for(f in files) printf "%.4f %s\n", files[f], f}' \
