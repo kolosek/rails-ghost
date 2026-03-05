@@ -71,45 +71,6 @@ jobs:
 
       - name: Split and run RSpec
         run: |
-          TIMING_FILE=/mnt/data/gitea/rspec_timings/${{ github.repository_owner }}/${{ github.event.repository.name }}/timings.txt
-          if [ -f "$TIMING_FILE" ]; then
-            echo "Timing file found with $(wc -l < $TIMING_FILE) entries"
-          else
-            echo "No timing file found, using fallback"
-          fi
-          FILES=$(.gitea/scripts/split_tests.sh ${{ matrix.ci_node_index }} ${{ matrix.ci_node_total }} $TIMING_FILE)
+          FILES=$(find spec -name '*_spec.rb' | sort | awk "NR % ${{ matrix.ci_node_total }} == ${{ matrix.ci_node_index }}")
           echo "Running: $FILES"
-          bundle exec rspec $FILES --format progress --format json --out tmp/rspec_results.json
-
-      - name: Save node timing data
-        if: always()
-        run: |
-          echo "Checking /mnt/data access:"
-          ls -la /mnt/ || echo "/mnt not accessible"
-          ls -la /mnt/data/ || echo "/mnt/data not accessible"
-          ls -la /mnt/data/gitea/ || echo "/mnt/data/gitea not accessible"
-          TIMING_DIR=/mnt/data/gitea/rspec_timings/${{ github.repository_owner }}/${{ github.event.repository.name }}
-          mkdir -p $TIMING_DIR && echo "Created $TIMING_DIR" || echo "Failed to create $TIMING_DIR"
-          if [ -f tmp/rspec_results.json ]; then
-            jq -r '.examples[] | "\(.run_time) \(.file_path | ltrimstr("./"))"' tmp/rspec_results.json | \
-              awk '{files[$2]+=$1} END {for(f in files) printf "%.4f %s\n", files[f], f}' \
-              > $TIMING_DIR/node_${{ matrix.ci_node_index }}.txt
-            echo "Timing data from this node: $(wc -l < $TIMING_DIR/node_${{ matrix.ci_node_index }}.txt) entries"
-          fi
-
-  merge-timings:
-    needs: test
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - name: Merge timing data from all nodes
-        run: |
-          TIMING_DIR=/mnt/data/gitea/rspec_timings/${{ github.repository_owner }}/${{ github.event.repository.name }}
-          if ls $TIMING_DIR/node_*.txt 1>/dev/null 2>&1; then
-            cat $TIMING_DIR/node_*.txt | \
-              awk '{files[$2]=$1} END {for(f in files) print files[f], f}' | \
-              sort -k2 > $TIMING_DIR/timings.txt
-            echo "Total timing entries: $(wc -l < $TIMING_DIR/timings.txt)"
-          else
-            echo "No node timing files found, skipping merge"
-          fi
+          bundle exec rspec $FILES
