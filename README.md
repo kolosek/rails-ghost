@@ -7,7 +7,6 @@ bundle exec rails server
 
 ### Sign in
 go to /users/sign_in
-
 ### Sign out
 go to /users/sign_out
 
