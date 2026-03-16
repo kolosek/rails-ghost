@@ -13,6 +13,12 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of(:password) }
   end
 
+  describe 'intentional failure' do
+    it 'fails on purpose' do
+      expect(true).to be false
+    end
+  end
+
   describe 'factory' do
     it 'has a valid factory' do
       expect(build(:user)).to be_valid
