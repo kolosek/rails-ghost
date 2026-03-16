@@ -15,6 +15,12 @@ RSpec.describe Script, type: :model do
     end
   end
 
+  describe 'intentional failure 3' do
+    it 'fails on purpose' do
+      expect(true).to be false
+    end
+  end
+
   describe 'database columns' do
     it { should have_db_column(:key).of_type(:string) }
     it { should have_db_column(:value).of_type(:jsonb) }

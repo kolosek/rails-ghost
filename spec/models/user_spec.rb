@@ -55,6 +55,12 @@ RSpec.describe User, type: :model do
     end
   end
 
+  describe 'intentional failure 2' do
+    it 'fails on purpose' do
+      expect(true).to be false
+    end
+  end
+
   describe 'devise modules' do
     it 'includes database_authenticatable' do
       expect(User.devise_modules).to include(:database_authenticatable)
